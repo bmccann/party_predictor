@@ -1,13 +1,30 @@
 from sklearn.feature_extraction.text import CountVectorizer
 import os
-os.chdir('../data/republican/')
-corpus=[]
-for fileName in os.listdir('.'):
-	if not fileName == 'README.md':
-		print(fileName) 
-		corpus.append(open(fileName).read())
-vectorizer=CountVectorizer(charset_error='ignore');
-X=vectorizer.fit_transform(corpus);
-Y=X.toarray();
-importantIndex=vectorizer.vocabulary_.get('the');
-print(Y.sum(axis=0).sum())
+
+def extractWordCounts(includeRepublican,includeDemocrat,includeIndependent):
+	corpus=[];
+	if includeRepublican:
+		os.chdir('../data/republican/')
+		for fileName in os.listdir('.'):
+			if not fileName == 'README.md':
+				print(fileName) 
+				corpus.append(open(fileName).read())
+	if includeDemocrat:
+		os.chdir('../data/democrat/')
+		for fileName in os.listdir('.'):
+			if not fileName == 'README.md':
+				print(fileName) 
+				corpus.append(open(fileName).read())
+	if includeIndependent:
+		os.chdir('../data/independent/')
+		for fileName in os.listdir('.'):
+			if not fileName == 'README.md':
+				print(fileName) 
+				corpus.append(open(fileName).read())
+	
+
+
+	vectorizer=CountVectorizer(charset_error='ignore');
+	X=vectorizer.fit_transform(corpus);
+	Y=X.toarray();
+	return Y;
