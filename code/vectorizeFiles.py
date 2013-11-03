@@ -1,8 +1,7 @@
 from sklearn.feature_extraction.text import CountVectorizer
 import os
 
-def extractWordCounts(includeRepublican,includeDemocrat,includeIndependent):
-	
+def extractWordCounts(includeRepublican,includeDemocrat,includeIndependent):	
 	corpus=[];
 	
 	if includeRepublican:
