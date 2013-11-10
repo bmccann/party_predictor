@@ -8,15 +8,15 @@ def extractWordCounts(includeRepublican,includeDemocrat,includeIndependent):
 		os.chdir('../data/republican/')
 		for fileName in os.listdir('.'):
 			if not fileName == 'README.md':
-				print(fileName) 
+				##print(fileName) 
 				corpus.append(open(fileName).read())
 		os.chdir('../../code')
 	
 	if includeDemocrat:
 		os.chdir('../data/democrat/')
 		for fileName in os.listdir('.'):
-			if not fileName == 'README.md':
-				print(fileName) 
+			if not (fileName == 'README.md' or fileName=='cuomo_dnc_keynote.txt'):
+				##print(fileName) 
 				corpus.append(open(fileName).read())
 		os.chdir('../../code')
 	
@@ -28,6 +28,7 @@ def extractWordCounts(includeRepublican,includeDemocrat,includeIndependent):
 				corpus.append(open(fileName).read())	
 		
 	vectorizer=CountVectorizer(stop_words='english',charset_error='ignore');
+	print vectorizer
 	X=vectorizer.fit_transform(corpus);
 	Y=X.toarray();
 	print len(Y)
