@@ -4,7 +4,7 @@ import random
 
 ##republican data
 fR=open('topRepubWords.txt','w')
-[repubMatrix,repubVectorizer]=VF.extractWordCounts(True,False,False);
+[repubMatrix,repubVectorizer,labelsR]=VF.extractWordCounts(True,False,False);
 repubColSums=repubMatrix.sum(axis=0)
 
 sortedIndices=[i[0] for i in sorted(enumerate(repubColSums),key=lambda x:-1*repubColSums[x[0]])]
@@ -17,7 +17,7 @@ fR.close();
 ##democrate data
 fD=open('topDemWords.txt','w')
 
-[demMatrix,demVectorizer]=VF.extractWordCounts(False,True,False);
+[demMatrix,demVectorizer,labelsR]=VF.extractWordCounts(False,True,False);
 demColSums=demMatrix.sum(axis=0)
 
 sortedindices=[i[0] for i in sorted(enumerate(demColSums),key=lambda x:-1*demColSums[x[0]])]
@@ -29,7 +29,7 @@ for word in topWords:
 	fD.write(word+'\n');
 fD.close()
 
-[repubAndDemMatrix,vectorizerRepubDem]=VF.extractWordCounts(True,True,False);
+[repubAndDemMatrix,vectorizerRepubDem,labelsT]=VF.extractWordCounts(True,True,False);
 totalScore=0
 for j in range(len(repubAndDemMatrix)):
 	##print('training, removing example number', j)
@@ -71,7 +71,7 @@ coefficientsDem=clf.feature_log_prob_[0]
 sortedindices=[i[0] for i in sorted(enumerate(coefficientsRep),key=lambda x:-1*(coefficientsDem[x[0]]-coefficientsRep[x[0]]))]	
 topDemwords=[word for word in vectorizerRepubDem.get_feature_names()]
 topDemwords=[topDemwords[ind] for ind in sortedindices[0:10]]
-print 'democrats: ',topDemwords
+print 'democrats: ', topDemwords
 
 sortedindices=[i[0] for i in sorted(enumerate(coefficientsRep),key=lambda x:(coefficientsDem[x[0]]-coefficientsRep[x[0]]))]	
 topRepwords=[word for word in vectorizerRepubDem.get_feature_names()]
