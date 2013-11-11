@@ -24,8 +24,8 @@ class LogisticRegression:
 		"""
 		return None
 
-def main(penalties, constants):
-	holdout = Holdout('../data')
+def main(penalties, constants, holdout):
+	holdout = Holdout('../data', maxHoldout=holdout)
 	holdout.prepData()
 	holdout.extractFeatures()
 
@@ -40,16 +40,19 @@ def main(penalties, constants):
 
 if  __name__ =='__main__':
 	"""
-	Usage: python logistic_regression.py <penalties constants>
+	Usage: python logistic_regression.py <penalties> <holdout> <constants>
 		where penalties and constants are comma delimited strings
 	"""
-	penalties, constants = ['l1', 'l2'], [.001, .1, .5, 1]
+	penalties, constants, holdout = ['l1', 'l2'], [.001, .1, .5, 1], 1
 
+	##TODO use a real optparse
 	if len(sys.argv) > 1:
 		penalties = sys.argv[1].split(',')
 	if len(sys.argv) > 2:
-		constants = sys.argv[2].split(',')
+		holdout = int(sys.argv[2])
+	if len(sys.argv) > 3:
+		constants = sys.argv[3].split(',')
 
-	main(penalties, constants)
+	main(penalties, constants, holdout)
 
 
