@@ -11,15 +11,18 @@ for j in range(len(RepAndDemMatrix)):
 	trainLabels=[]
 	testLabels=[]
 	for i in range(len(RepAndDemMatrix)):
+		rowSum=RepAndDemMatrix[i].sum()	
 		if not i==j:
 			trainSetIndices.append(i)
-			trainMatrix.append(RepAndDemMatrix[i])
+			entry = [float(e)/float(rowSum) for e in RepAndDemMatrix[i]]	
+			trainMatrix.append(entry)
 			trainLabels.append(RepAndDemLabels[i])	
 		else:
 			testSetIndices.append(i)
-			testMatrix.append(RepAndDemMatrix[i])
+			entry = [float(e)/float(rowSum) for e in RepAndDemMatrix[i]]
+			testMatrix.append(entry)
 			testLabels.append(RepAndDemLabels[i])				
-	logReg=LogisticRegression(penalty='l1',C=.7)
+	logReg=LogisticRegression(penalty='l1',C=1)
 	logReg.fit(trainMatrix,trainLabels)	
 	totalScore=totalScore+logReg.score(testMatrix,testLabels)
 

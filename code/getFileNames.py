@@ -18,10 +18,10 @@ def getFileNames():
 			Names = np.append(Names, fileName)
 	os.chdir('../../code')
 
-	os.chdir('../data/independent/')
-	for fileName in os.listdir('.'):
-		if not fileName == 'README.md':
-			Names = np.append(Names, fileName)
-	os.chdir('../../code')
+	##os.chdir('../data/independent/')
+	##for fileName in os.listdir('.'):
+	##	if not fileName == 'README.md':
+	##		Names = np.append(Names, fileName)
+	##os.chdir('../../code')
 	
 	return Names
