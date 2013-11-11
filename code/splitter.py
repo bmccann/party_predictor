@@ -7,14 +7,16 @@ class DataSplitter():
 		ex: 
 			from splitter import DataSplitter 
 			ds = DataSplitter(split=.7)
-			trainData, devData = ds.splitDir(inputDir='../data')
+			classNames, trainData, devData, trainLabels, devLabels = ds.splitDir('../data')
 
 		@split: a number between 0 and 1, indicating the fraction of the data you want returned 
 		for training (shuffled randomly by default). 
 
-		@return classes: the classes in our input data
+		@return classNames: the classes in our input data
 		@return trainData: the portion of your data returned for training
 		@return devData: the portion of your data returned for developing your algorithm	
+		@return trainLabels: the labels for your training data in order of example
+		@return devLabels: the labels for your development data in order of example
 		"""
 		self.split = split
 
@@ -53,10 +55,15 @@ class DataSplitter():
 		if randomize: shuffle(trainFilesAndLabels)
 		if randomize: shuffle(devFilesAndLabels)
 
-		trainFiles = [t[0] for t in trainFilesAndLabels]
-		devFiles = [t[0] for t in devFilesAndLabels]
-		trainLabels = [t[1] for t in trainFilesAndLabels]
-		devLabels = [t[1] for t in devFilesAndLabels]
+		trainFiles, trainLabels = [], []
+		for t in trainFilesAndLabels:
+			trainFiles.append(t[0])
+			trainLabels.append(t[1])
+
+		devFiles, devLabels = [], []
+		for t in devFilesAndLabels:
+			devFiles.append(t[0])
+			devLabels.append(t[1])
 
 		print "NumTraining: ", len(trainFiles)
 		print "NumDev: ", len(devFiles)
