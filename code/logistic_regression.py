@@ -5,7 +5,7 @@ import sys
 class LogisticRegression:
 	"""
 	An abstract LogisticRegression model; must retrieve either a scikit learn implementation
-	or a custom implementation before using
+	or a custom implementation (for comparison) before using
 	"""
 
 	def scikit(self, penalty='l2', C=1):
