@@ -4,47 +4,46 @@ import os, os.path
 class DataSplitter():
 	def __init__(self, split):
 		"""
-		ex: 
+		Usage example: 
 			from splitter import DataSplitter 
 			ds = DataSplitter(split=.7)
-			classNames, trainData, devData, trainLabels, devLabels = ds.splitDir('../data')
+			classNames, trainData, trainLabels, devData, devLabels = ds.splitDir('../data')
 
-		@split: a number between 0 and 1, indicating the fraction of the data you want returned 
+		@param (split): a float between 0 and 1, indicating the fraction of the data you want returned 
 		for training (shuffled randomly by default). 
 
-		@return classNames: the classes in our input data
-		@return trainData: the portion of your data returned for training
-		@return devData: the portion of your data returned for developing your algorithm	
-		@return trainLabels: the labels for your training data in order of example
-		@return devLabels: the labels for your development data in order of example
+		@return (classNames): the classes in our input data
+		@return (trainData): the portion of your data returned for training
+		@return (devData): the portion of your data returned for developing your algorithm	
+		@return (trainLabels): the labels for your training data in order of example
+		@return (devLabels): the labels for your development data in order of example
 		"""
 		self.split = split
 
 	def splitDir(self, inputDir, type='train', randomize=True):
 		"""
-		@inputDir: the directory containing subdirectories for each class 
-		@type: the type of split you want 
+		@param (inputDir): the directory containing subdirectories for each class 
+		@param (type='train'): the type of split you want 
 						-- 'train' be default returns trainData and devData
-		@random: whether you want a random split
+		@param (random=True): whether you want a random split
 		"""
 
-		print "Input Directory: ", inputDir
-		# retrieving the classes, and their respective directories
+		# print "Input Directory: ", inputDir
 		classDirs = [ os.path.join(inputDir, name) for name in os.listdir(inputDir) \
 			if os.path.isdir(os.path.join(inputDir, name)) ]
 		classNames = [d.split('/')[-1] for d in classDirs]
 		numClasses = len(classDirs)
-		print "Classes: ", numClasses
-		print "Class Names: ", classNames
+		# print "Classes: ", numClasses
+		# print "Class Names: ", classNames
 
-		print "Retrieving file names..."
+		# print "Retrieving file names..."
 		dataFiles = []
 		for d in classDirs:
 			fileNames = [ os.path.join(d, name) for name in os.listdir(d) \
 				if os.path.isfile(os.path.join(d, name)) and 'txt' in os.path.join(d, name)]
 			dataFiles.append(fileNames)
 
-		print "Splitting Files..."
+		# print "Splitting Files..."
 		trainFilesAndLabels = []
 		devFilesAndLabels = []
 		for c in range(numClasses):
@@ -65,8 +64,8 @@ class DataSplitter():
 			devFiles.append(t[0])
 			devLabels.append(t[1])
 
-		print "NumTraining: ", len(trainFiles)
-		print "NumDev: ", len(devFiles)
+		# print "NumTraining: ", len(trainFiles)
+		# print "NumDev: ", len(devFiles)
 
 		trainData = []
 		devData = []
@@ -77,6 +76,6 @@ class DataSplitter():
 			with open(devFile) as tf:
 				devData.append(tf.read())
 
-		return classNames, trainData, devData, trainLabels, devLabels
+		return classNames, trainData, trainLabels, devData, devLabels
 
 
