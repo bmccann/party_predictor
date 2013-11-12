@@ -35,7 +35,7 @@ def main(penalties, constants, holdout):
 			abstractModel = LogisticRegression()
 			model = abstractModel.scikit(penalty, C)
 			holdout.setModel(model)
-			holdout.run()
+			holdout.run(normalize=True,binarize=False)
 
 
 if  __name__ =='__main__':
