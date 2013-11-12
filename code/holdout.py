@@ -35,7 +35,7 @@ class Holdout:
 	def setModel(self, model):
 		self.model = model
 
-	def run(self):
+	def run(self, normalize=False, binarize=False):
 		"""
 		runs hold out given the current set of parameters. must have set a model and extracted features
 		"""
@@ -58,6 +58,19 @@ class Holdout:
 				trainExamples = vstack([self.featureMatrix[:holdout], self.featureMatrix[finalHoldout:]])
 				trainLabels = self.labels[:holdout] + self.labels[finalHoldout:]
 				
+				if normalize:
+					Z = 0
+					for row in holdouts:
+						Z = sum(row)
+						holdouts = [entry/Z for entry in row]
+					Z = 0
+					for row in trainExamples:
+						Z = sum(row)
+						holdouts = [entry/Z for entry in row]					
+
+				if binarize:
+					holdouts = [[entry > 0 for entry in row] for row in holdouts]
+
 				# print '...scoring: ' 
 				self.model.fit(trainExamples, trainLabels)	
 				totalScore = totalScore + self.model.score(holdouts, holdoutLabels)
