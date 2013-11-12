@@ -11,12 +11,14 @@ OVERALL variance in the data; the first principal component explains the most va
 in the data, the second explains the second most variance in the data, etc.
 '''
 
-[repubAndDemMatrix,vectorizerRepubDem, labels]=VF.extractWordCounts(True,True,False)
-Names = gf.getFileNames()
 
-# The first 2 principal components explain significantly more variance than the others
-pca = PCA(n_components = 2)
-pca.fit(repubAndDemMatrix)
-print(pca.explained_variance_ratio_)
 
-reducedFeatureMatrix = pca.transform(repubAndDemMatrix)
+# The first k principal components
+# Usage: [repubAndDemMatrix,vectorizerRepubDem, labels]=VF.extractWordCounts(True,True,False)
+#        transformed = PCA.getPCAMat(repubAndDemMatrix)
+
+def getPCAMat(repubAndDemMatrix, k):
+    pca = PCA(n_components = k)
+    pca.fit(repubAndDemMatrix)
+    print(pca.explained_variance_ratio_)
+    return pca.transform(repubAndDemMatrix)
