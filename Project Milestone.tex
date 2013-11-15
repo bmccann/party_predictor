@@ -1,0 +1,100 @@
+\documentclass[twocolumn]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{algpseudocode}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{bbm}
+\renewcommand{\algorithmicforall}{\textbf{for each}}
+\usepackage{tikz}
+\usepackage{dsfont}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\Abs}[1]{\bigg\lvert#1\bigg\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\ceil}[1]{\lceil#1\rceil}
+\usetikzlibrary{arrows}
+\usepackage[margin=0.7in]{geometry}
+
+\begin{document}
+
+\author{
+  Bryan McCann\\
+  Stanford University\\
+  \texttt{bmccann@stanford.edu}
+  \and
+  Brandon Ewonus\\
+  Stanford University\\
+  \texttt{bewonus@stanford.edu}
+  \and
+  Nat Roth\\
+  Stanford University\\
+  \texttt{nroth@stanford.edu}
+}
+\title{CS 229 - Project Milestone}
+\date{}
+
+\maketitle
+
+\section*{Abstract}
+
+\emph{In this report we analyze the political speeches made by members of the Democratic and Republican parties in the United States.  Specifically, we attempt to learn which features best differentiate speeches made by the two parties, and develop a model to classify speeches as either Democrat or Republican.}
+
+\section{Introduction}
+
+Division among the political parties in the United States has become an increasingly large problem. The American populace continues to recover from  the most threatening economic recession in decades. Environmental crises have plagued the nation regularly. The government shutdown, and the Treasury nearly defaulted on its debt. When members of one party bridge the divide to provide support in times of trouble, they are met with ostracization from their own party, and unfortunately polls and polarization research show that partisan divisions drive the debate amongst those who are responsible for solutions.$\footnote[1]{http://www.people-press.org/2012/06/04/partisan-polarization-surges-in-bush-obama-years/}$ What's more, the American populace does not appear to be any less divided.$\footnote[2]{http://www.usatoday.com/story/news/politics/2013/03/06/partisan-politics-poll-democrats-republicans/1965431/}$. 
+
+This paper outlines a variety of supervised and unsupervised techniques employed in an effort to flesh out these divisions under the assumption that the content and rhetoric of political speeches can provide insight into the sharp divides we see in American politics today. 
+
+\section{Data Collection and Handling}
+
+Our dataset consists of 164 speeches (84 Republican / 80 Democrat) by American politicians delivered during or after the presidency of Franklin Roosevelt. Political lines prior to the presidency of FDR become increasingly difficult to relate in a one-to-one fashion to the political parties today; thus, we will most likely steer away from adding speeches before that time period. All of the data was collected by scraping online sources for text. At this point, the data is heavily biased towards presidents and more recent politicians even within the 'modern' time range specified earlier. We will continue to add speeches until the final report, branching out into Congressional politicians, governors, and other major political figures to help generalize our model for the future. 
+
+Preprocessing is handled by Scikit's CountVectorizer. English stop words are removed, and CountVectorizer's defaults are used for the rest of the preprocessing, which yields word count features only.
+
+\section{Methods / Analysis}
+
+\subsection{Naive Bayes}
+
+\subsection{SVM}
+
+\subsection{K-means}
+
+\subsection{Logistic Regression}
+
+\subsection{Regularization}
+
+\section{Results / Discussion}
+
+\section{To Do}
+
+\begin{thebibliography}{9}
+
+\bibitem{lamport94}
+  ``scikit-learn: Machine Learning in Python''.
+  
+  $<$\url{http://scikit-learn.org/stable/index.html}$>$
+
+\bibitem{lamport94}
+  ``History \& Politics Out Loud: Famous Speeches''.
+  
+  $<$\url{http://www.wyzant.com/resources/lessons/history/hpol/}$>$
+  
+\bibitem{lamport94}
+  ``American Rhetoric Speech Bank''.
+  
+  $<$\url{http://www.americanrhetoric.com/}$>$
+
+\bibitem{lamport94}
+  ``Presidential Rhetoric''.
+  
+  $<$\url{http://www.presidentialrhetoric.com}$>$
+
+\bibitem{lamport94}
+  ``The American Presidency Project''.
+  
+  $<$\url{http://www.presidency.ucsb.edu/index.php#axzz2i2nXPc43}$>$
+
+
+\end{thebibliography}
+
+\end{document}
