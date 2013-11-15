@@ -4,7 +4,6 @@ import PCA
 from sklearn.linear_model import LogisticRegression
 
 
-<<<<<<< HEAD
 clf = LogisticRegression('l1', False, 1000.0)
 [repubAndDemMatrix,vectorizerRepubDem, labels]=VF.extractWordCounts(True,True,False)
 for k in xrange(1, 51):
@@ -27,19 +26,18 @@ for k in xrange(1, 51):
 #     testLabels = labels[40:71]
 #     print 'Accuracy is', clf.score(testMat, testLabels), 'when k =', k
 
-=======
-clf = LogisticRegression()
-[repubAndDemMatrix,vectorizerRepubDem, labels]=VF.extractWordCounts(True,True,False)
-k = 10
-transformed = PCA.getPCAMat(repubAndDemMatrix, k)
-totalCorrect = 0
-for i in range(len(transformed)):
-    trainMat = np.concatenate((transformed[0:i], transformed[i+1:len(transformed)]), axis = 0)
-    trainLabels = np.concatenate((labels[0:i], labels[i+1:len(transformed)]), axis = 0)
-    clf.fit(trainMat, trainLabels)
-    if clf.predict(transformed[i]) == labels[i]:
-        totalCorrect = totalCorrect + 1
 
-print('LOOCV test error is')
-print(float(totalCorrect) / float(len(transformed)))
->>>>>>> 9a03f806d60fef6d66299e092ccc42c942f24a02
+# clf = LogisticRegression()
+# [repubAndDemMatrix,vectorizerRepubDem, labels]=VF.extractWordCounts(True,True,False)
+# k = 10
+# transformed = PCA.getPCAMat(repubAndDemMatrix, k)
+# totalCorrect = 0
+# for i in range(len(transformed)):
+#     trainMat = np.concatenate((transformed[0:i], transformed[i+1:len(transformed)]), axis = 0)
+#     trainLabels = np.concatenate((labels[0:i], labels[i+1:len(transformed)]), axis = 0)
+#     clf.fit(trainMat, trainLabels)
+#     if clf.predict(transformed[i]) == labels[i]:
+#         totalCorrect = totalCorrect + 1
+# 
+# print('LOOCV test error is')
+# print(float(totalCorrect) / float(len(transformed)))

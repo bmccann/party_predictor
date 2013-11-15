@@ -16,6 +16,8 @@ def partyKMeans(k):
     for i in range(k):
         print 'Cluster #', i+1
         print
+        print len(Names[pred == i])
+        print
         print Names[pred == i]
         print
 
@@ -23,3 +25,4 @@ k = int(sys.argv[1])
 print 'Performing KMeans with', k, 'clusters.'
 print
 partyKMeans(k)
+print len(Names)

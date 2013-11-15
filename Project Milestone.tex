@@ -41,7 +41,7 @@
 
 \section{Introduction}
 
-Division among the political parties in the United States has become an increasingly large problem. The American populace continues to recover from  the most threatening economic recession in decades. Environmental crises have plagued the nation regularly. The government shutdown, and the Treasury nearly defaulted on its debt. When members of one party bridge the divide to provide support in times of trouble, they are met with ostracization from their own party, and unfortunately polls and polarization research show that partisan divisions drive the debate amongst those who are responsible for solutions.$\footnote[1]{http://www.people-press.org/2012/06/04/partisan-polarization-surges-in-bush-obama-years/}$ What's more, the American populace does not appear to be any less divided.$\footnote[2]{http://www.usatoday.com/story/news/politics/2013/03/06/partisan-politics-poll-democrats-republicans/1965431/}$. 
+Division among the political parties in the United States has become an increasingly large problem. The American populace continues to recover from  the most threatening economic recession in decades. Environmental crises have plagued the nation regularly. The government shutdown, and the Treasury nearly defaulted on its debt. When members of one party bridge the divide to provide support in times of trouble, they are met with ostracization from their own party, and unfortunately polls and polarization research show that partisan divisions drive the debate amongst those who are responsible for solutions $[6]$.  What's more, the American populace does not appear to be any less divided $[7]$. 
 
 This paper outlines a variety of supervised and unsupervised techniques employed in an effort to flesh out these divisions under the assumption that the content and rhetoric of political speeches can provide insight into the sharp divides we see in American politics today. 
 
@@ -55,17 +55,79 @@ Preprocessing is handled by Scikit's CountVectorizer. English stop words are rem
 
 \subsection{Naive Bayes}
 
+We implemented a Naive Baye’s model with Laplacian smoothing as a first step in analyzing our data. As of this writing, we had 164 speeches to train on, 84 coming from Republicans and 80 coming from Democrats. On this dataset, Naive Baye’s performed reasonably well: yielding a leave one out cross validation error rate of roughly 19\%. In addition, after training a model on the whole dataset, we examined the learned parameters to determine which words had the greatest difference in conditional probabilities. We looked at the 10 words, for which we observed the maximum values of $\log(P(\text{word } i | \text{republican}) / P(\text{word } i | \text{democrat}))$ as well as the 10 words, which yielded the maximum values of $\log(P(\text{word } i | \text{democrat})/P(\text{word } i |\text{republican}))$. The former gave us a list of the 10 words which were most indicative of Republican speeches, while the latter gave us the 10 words most indicative of Democratic speeches. They were as follows: 
+\begin{verbatim}
+Democrat: Qaeda, Assad, Gun, Negro, Everybody, 
+Internet, Carbon, Outstanding, Obama , Jewish	
+\end{verbatim}
+
+\begin{verbatim}
+Republican: Conservatives, Abortion, Iraqi, SDI, 
+Liberals, Unborn, Iraqis, Goldwater, Confronting, 
+Paris
+\end{verbatim}
+Some of these words, like `Obama' and `SDI' (Strategic Defense Initiative) reveal bias in our data set such as having a preponderance of Obama and Reagan speeches. We are working on addressing this bias by gathering more data. Still, many, like `gun', `conservatives', and `unborn', match quite well with our intuition on what words Democrats and Republicans use.
+
 \subsection{SVM}
 
-\subsection{K-means}
+Support Vector Machines are among the best `off-the-shelf' supervised learning algorithms available for binary classification, particularly for their efficacy when dealing with high-dimensional data such as ours where the number of feature variables (distinct words) exceeds the number of samples (documents).  In addition, SVMs offer plenty of opportunities for regularization: we can specify any valid Kernel function and soft margin penalty term.  We used the scikit-learn implementation of SVMs, as well as a grid search method, to search through our set of specified regularization parameters and classify our speech documents.  We specified 4 different Kernel functions:
+\begin{itemize}
+\item Linear: $K(x, z) = \langle x, z \rangle$
+\item Polynomial: $(\gamma \langle x, z \rangle + r)^d$
+\item Radial Basis Function: $e^{-\gamma \abs{x - z}^2}$
+\item Sigmoid: $\tanh(\gamma \langle x, z \rangle + r)$
+\end{itemize}
+Our method performed 5-fold cross-validation on our data, using each of the above Kernel functions $\big($with $d = 3$, $r = 0$, and $\gamma = \frac{1}{\text{\# features}} = \frac{1}{17220}$$\big)$ and using penalty terms $C \in \{ 1, 2, ..., 10 \}$.  The optimal kernel returned from this search was the radial basis function $K(x,z) = e^{-\frac{\abs{x - z}^2}{17220}}$, with an optimal penalty term of $C = 5$.  The training error for these specific parameters was 5\% with a cross-validation error of 16\%.
 
 \subsection{Logistic Regression}
 
-\subsection{Regularization}
+We fit a regularized logistic regression model as well. We tried both L1 and L2 regularization, with varying degrees of strength. We observed the best performance, roughly an 16\% LOOCV,  using L1 regularization and with a large penalty coefficient of 100.  When we decreased the penalty, performance was worse. This was expected, since our dataset consists of only 164 data points, but has around 17220 unique words of features. So without strong regularization, we overfit on our train set and thus saw a worse test error. In the future, we plan to use the logistic regression model to look at the speeches that have the highest probability of being Democratic and Republican under the model; this will give us a sense of what speeches are the most Democratic and which are the most Republican.
 
-\section{Results / Discussion}
+\subsection{PCA}
+
+In each of the machine learning algorithms above, we used the entire word count matrix to classify documents, using optimized regularization to reduce the number of feature variables.  We then used principal component analysis to reduce the dimensionality of our data, which works by finding the set of $k$ mutually orthogonal features which best explain the variation in the data.  Specifically, we computed $k$ principal components for each $k \in \{ 1, ..., 50 \}$, and then ran logistic regression using the $k$ features from PCA (using L1 regularization with a very minimal penalty).  The leave one out cross validation error was recorded for each $k$.  Remarkably, with $k$ as small as 8 we achieved a LOOCV error of $21\%$, and with $k = 23$ we achieved nearly the same LOOCV error as with the methods above ($16\%$).  One drawback of using PCA is that the interpretation of what the $k$ components represent may be somewhat challenging, however the fact that we can achieve similar performance and accuracy as may other supervised learning methods with far fewer features is exciting.  In the future, we plan to plot the documents along the first two principal components in order to see what underlying structure is present, and which documents help define these 2 axes.  We will also consider utilizing LDA or QDA as additional dimensionality reduction algorithms, which may be better suited for binary classification than PCA (since they search for the linear combinations of features which best explain the variance \emph{between} classes).
+
+\subsection{K-means}
+
+In addition to using supervised learning algorithms for classification, we also ran K-means on our data in order to determine whether there were any inherent clustering patterns among the speeches we analyzed.  Of course, we expected to see some divides based on political party, however we were interested to see what other trends were present in the data as well.  With 5 clusters, the documents separated as follows:
+
+\vspace{1pc}
+\noindent
+Cluster 1: 9 Clinton
+
+\vspace{1pc}
+\noindent
+Cluster 2: 10 Obama, 1 JFK
+
+\vspace{1pc}
+\noindent
+Cluster 3: 1 Carter speech
+
+\vspace{1pc}
+\noindent
+Cluster 4: 18 Reagan, 8 Bush Jr, 4 Bush Sen, 4 Obama, 3 Carter, 2 Ford, 1 Nixon, 1 Clinton, 1 Cuomo
+
+\vspace{1pc}
+\noindent
+Cluster 5: 29 Obama, 18 Reagan, 10 Johnson, 9 Bush Jr, 8 Bush Sen, 6 Clinton, 4 Ford, 3 Eisenhower, 3 Nixon, 2 JFK, 1 RFK, 1 Carter, 1 Macarthur, 1 Roosevelt, 1 Wilson, 1 Jesse Jackson, 1 Barbara Jordan, 1 Hillary Clinton
+
+\vspace{1pc}
+\noindent
+We were pleased to find that all but 1 of Clinton's speeches in cluster 1 were state of the union addresses, and nearly all of the speeches in cluster 2 addressed economic issues, including housing and the Affordable Care Act.  Cluster 4 consisted predominantly of Republican speeches and state of the union addresses, and contained speeches relating to diplomacy, national security, and forward looking vision.  Cluster 3 contained only a single document, which was peculiar because of its format (it may have contained some unusual character sequences, which we will investigate further).  Finally, cluster 5 contained all of the remaining documents, which were too similar to separate from one another.  The split between parties was roughly half-and-half in this cluster.  Further iterations of K-means with different numbers of clusters may give us more insight, and is something we hope to explore further.
 
 \section{To Do}
+
+Before the final project is due, we have a number of goals:
+\begin{itemize}
+\item We want to run PCA analysis to determine the two axes which best explain the data and then plot all the documents in that two dimensional plane. This will allow us to observe which speeches are most similar to each other.
+\item We want to gather more data; a larger dataset should give us a broader and more representative train set and thus yield better generalization error. 
+\item Try out our model on texts which are not speeches; for example, we would like to try to classify tweets as democratic or republican or possibly comments on news articles.
+\item We want to use the probabilities from logistic regression to characterize speeches by how Republican and Democratic they are.
+\item Work on improving and tuning the algorithms we have already applied to try to decrease generalization error.
+\item Consider using LDA or QDA for dimensionality reduction before classifying our documents as either Republican or Democratic.
+\item Perform broader regularization on the additional parameters of the SVM algorithm ($r$, $d$, and $\gamma$).
+\item Test our model on non-training and non-CV data, to get an unbiased estimate of our test error.
+\end{itemize}
 
 \begin{thebibliography}{9}
 
@@ -94,6 +156,15 @@ Preprocessing is handled by Scikit's CountVectorizer. English stop words are rem
   
   $<$\url{http://www.presidency.ucsb.edu/index.php#axzz2i2nXPc43}$>$
 
+\bibitem{lamport94}
+  ``Partisan Polarization Surges in Bush, Obama Years''.
+  
+  $<$\url{http://www.people-press.org/2012/06/04/partisan-polarization-surges-in-bush-obama-years/}$>$
+
+\bibitem{lamport94}
+  ``Political partisanship mirrors public''.
+  
+  $<$\url{http://www.usatoday.com/story/news/politics/2013/03/06/partisan-politics-poll-democrats-republicans/1965431/}$>$
 
 \end{thebibliography}
 
