@@ -1,4 +1,5 @@
 from sklearn.feature_extraction.text import CountVectorizer
+import numpy
 from numpy import vstack
 from splitter import DataSplitter
 
@@ -28,7 +29,7 @@ class Holdout:
 		"""
 		assert self.data, "Must prepare data before extracting features"
 		print "\nExtracting Features..."
-		cv = CountVectorizer(stop_words='english', strip_accents='ascii', charset_error='replace');
+		cv = CountVectorizer(stop_words='english', strip_accents='ascii', charset_error='replace',dtype=numpy.float32,binary=False);
 		fittedCV = cv.fit_transform(self.data);
 		self.featureMatrix = fittedCV.todense()	
 
@@ -42,38 +43,64 @@ class Holdout:
 		assert self.model, "Must set model before running"
 		assert self.featureMatrix.any(), "Must extract features before running"
 
-		for numHoldout in range(1, self.maxHoldout + 1):
+		for numHoldout in range(self.maxHoldout, self.maxHoldout + 1):
 			print "\n\tRunning Holdout: ", str(numHoldout)
 
 			numExamples = len(self.featureMatrix) - numHoldout
 			assert numExamples > 0, "Holding out too many; 0 or fewer examples for training"
 			# print "Examples to Train: ", str(numExamples)
-
+			repMisses=0
+			demMisses=0
 			totalScore = 0
-			for holdout in range(numExamples):
+			for i, holdout in enumerate(range(numExamples)):
+				if i % numHoldout and i != 0: continue
+				print i
 				finalHoldout = holdout + numHoldout
 				# print '...removing example(s): ', range(holdout, finalHoldout)
 				holdouts = self.featureMatrix[holdout:finalHoldout]
 				holdoutLabels = self.labels[holdout:finalHoldout]
 				trainExamples = vstack([self.featureMatrix[:holdout], self.featureMatrix[finalHoldout:]])
-				trainLabels = self.labels[:holdout] + self.labels[finalHoldout:]
-				
+				trainLabels = self.labels[:holdout] + self.labels[finalHoldout:]	
 				if normalize:
 					Z = 0
-					for row in holdouts:
-						Z = sum(row)
-						holdouts = [entry/Z for entry in row]
+					##holdouts=holdouts.T
+					for i in range(holdouts.shape[1]):
+						Z = numpy.sum(holdouts[:,i])
+						avg=float(Z)/holdouts.shape[0]
+						if numpy.std(holdouts[:,i]):
+							holdouts[:,i]-=avg
+							holdouts[:,i]/=numpy.std(holdouts[:,i])
+						if not numpy.std(holdouts[:,i]) and Z:
+							print numpy.std(holdouts[:,i])
+						
+							for j in  holdouts[:,i]:
+								print j
+					##holdouts=holdouts.T	##print numpy.sum(holdouts[i,:])
 					Z = 0
-					for row in trainExamples:
-						Z = sum(row)
-						holdouts = [entry/Z for entry in row]					
-
-				if binarize:
-					holdouts = [[entry > 0 for entry in row] for row in holdouts]
-
+					##trainExamples=trainExamples.T
+					for i in range(trainExamples.shape[1]):
+						Z = numpy.sum(trainExamples[:,i])
+						avg=float(Z)/trainExamples.shape[0]
+						if not numpy.std(trainExamples[:,i]) and Z:
+							print trainExamples[:,i]
+							print 'hi'
+							print trainExamples.size
+						if numpy.std(trainExamples[:,i]):
+							trainExamples[:,i]-=avg
+							trainExamples[:,i]/=numpy.std(trainExamples[:,i])						
+						
+							##print numpy.sum(trainExamples[i,:])
+					##trainExamples=trainExamples.T
 				# print '...scoring: ' 
-				self.model.fit(trainExamples, trainLabels)	
-				totalScore = totalScore + self.model.score(holdouts, holdoutLabels)
+				self.model.fit(trainExamples, trainLabels)
+				predicted_labels=self.model.predict(holdouts)	
+				for i,pred in enumerate(predicted_labels):
+					if not pred==holdoutLabels[i]:
+						if holdoutLabels[i]:
+							repMisses+=1
+						else:
+							demMisses+=1
+				totalScore = totalScore + numHoldout*self.model.score(holdouts, holdoutLabels)
 
-			print '\tAverage Score: ', totalScore/numExamples
-
+			print '\tAverage Score: ', 1-(demMisses+repMisses)/float(numExamples), ' ', totalScore/float(numExamples)
+			print '\tMissed ', demMisses, ' Democrats and ',repMisses, " Republicans"

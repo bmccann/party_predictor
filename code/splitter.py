@@ -72,6 +72,8 @@ class DataSplitter():
 		for trainFile in trainFiles:
 			with open(trainFile) as tf:
 				trainData.append(tf.read())
+				if len(trainData[-1])==0:
+					print 'why!!!', trainFile
 		for devFile in devFiles:
 			with open(devFile) as tf:
 				devData.append(tf.read())

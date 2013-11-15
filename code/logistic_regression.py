@@ -35,7 +35,7 @@ def main(penalties, constants, holdout):
 			abstractModel = LogisticRegression()
 			model = abstractModel.scikit(penalty, C)
 			holdout.setModel(model)
-			holdout.run(normalize=True,binarize=False)
+			holdout.run(normalize=True)
 
 
 if  __name__ =='__main__':
@@ -43,7 +43,7 @@ if  __name__ =='__main__':
 	Usage: python logistic_regression.py <penalties> <holdout> <constants>
 		where penalties and constants are comma delimited strings
 	"""
-	penalties, constants, holdout = ['l1', 'l2'], [.001, .1, .5, 1], 1
+	penalties, constants, holdout = ['l1', 'l2'], [ .1, .5, 1], 1
 
 	##TODO use a real optparse
 	if len(sys.argv) > 1:
@@ -51,7 +51,7 @@ if  __name__ =='__main__':
 	if len(sys.argv) > 2:
 		holdout = int(sys.argv[2])
 	if len(sys.argv) > 3:
-		constants = sys.argv[3].split(',')
+		constants = [float(entry) for entry in sys.argv[3].split(',')]
 
 	main(penalties, constants, holdout)
 
