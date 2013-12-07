@@ -34,7 +34,6 @@ for i in range(len(labels)):
 	trainLabels = np.concatenate((labels[0:i], labels[i+1:sz]), axis = 0)
 	#trainLabels = labels[0:i] + labels[i+1:sz]
 	
-	
 	clf.fit(trainMat, trainLabels)
 	#clf.fit(repubAndDemMatrix, labels)
 	#clf = getLDAMat(trainMat, trainLabels, 5);

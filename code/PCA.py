@@ -11,8 +11,6 @@ OVERALL variance in the data; the first principal component explains the most va
 in the data, the second explains the second most variance in the data, etc.
 '''
 
-
-
 # The first k principal components
 # Usage: [repubAndDemMatrix,vectorizerRepubDem, labels]=VF.extractWordCounts(True,True,False)
 #        transformed = PCA.getPCAMat(repubAndDemMatrix)
@@ -20,5 +18,6 @@ in the data, the second explains the second most variance in the data, etc.
 def getPCAMat(repubAndDemMatrix, k):
     pca = PCA(n_components = k,whiten=True)
     pca.fit(repubAndDemMatrix)
-    print(pca.explained_variance_ratio_)
+    #print(pca.explained_variance_ratio_)
     return pca.transform(repubAndDemMatrix)
+

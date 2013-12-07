@@ -4,7 +4,7 @@ import vectorizeFiles as VF
 from sklearn import svm, grid_search
 
 [repubAndDemMatrix,vectorizerRepubDem, labels]=VF.extractWordCounts(True,True,False)
-parameters = {'kernel':('linear','rbf','poly','sigmoid'), 'C':[1,2,3,4,5,6,7,8,9,10]}
+parameters = {'kernel':('linear','rbf','poly','sigmoid'), 'C':[1,2,3,4,5,6,7,8,9,10], 'gamma':[1.0]}
 svr = svm.SVC()
 clf = grid_search.GridSearchCV(svr, parameters)
 clf.fit(repubAndDemMatrix, labels)
