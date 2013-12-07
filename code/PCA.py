@@ -18,7 +18,7 @@ in the data, the second explains the second most variance in the data, etc.
 #        transformed = PCA.getPCAMat(repubAndDemMatrix)
 
 def getPCAMat(repubAndDemMatrix, k):
-    pca = PCA(n_components = k)
+    pca = PCA(n_components = k,whiten=True)
     pca.fit(repubAndDemMatrix)
     print(pca.explained_variance_ratio_)
     return pca.transform(repubAndDemMatrix)

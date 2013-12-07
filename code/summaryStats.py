@@ -1,7 +1,7 @@
 import vectorizeFiles as VF
 from sklearn.naive_bayes import MultinomialNB
 import random 
-
+from sklearn.linear_model import LogisticRegression 
 ##republican data
 fR=open('topRepubWords.txt','w')
 [repubMatrix,repubVectorizer,labelsR]=VF.extractWordCounts(True,False,False);
@@ -29,7 +29,14 @@ for word in topWords:
 	fD.write(word+'\n');
 fD.close()
 
-[repubAndDemMatrix,vectorizerRepubDem,labelsT]=VF.extractWordCounts(True,True,False);
+[repubAndDemMatrix,vectorizerRepubDem,labels]=VF.extractWordCounts(True,True,False);
+##print vectorizerRepubDem.get_feature_names()
+print repubAndDemMatrix.shape
+model=LogisticRegression(C=.1)
+model.fit(repubAndDemMatrix[10:],labels[10:])
+scores=model.predict_log_proba(repubAndDemMatrix[1:10])
+##print scores[1:164]
+
 totalScore=0
 for j in range(len(repubAndDemMatrix)):
 	##print('training, removing example number', j)
@@ -63,20 +70,27 @@ for j in range(len(repubAndDemMatrix)):
 		trainLabelsWhole.append(1)
 	else:
 		trainLabelsWhole.append(0)		
+
 clfT=MultinomialNB()
 clfT.fit(repubAndDemMatrix,trainLabelsWhole)
+print repubAndDemMatrix
 coefficientsRep=clf.feature_log_prob_[1]
 coefficientsDem=clf.feature_log_prob_[0]
 
 sortedindices=[i[0] for i in sorted(enumerate(coefficientsRep),key=lambda x:-1*(coefficientsDem[x[0]]-coefficientsRep[x[0]]))]	
 topDemwords=[word for word in vectorizerRepubDem.get_feature_names()]
-topDemwords=[topDemwords[ind] for ind in sortedindices[0:10]]
+topDemwords=[topDemwords[ind] for ind in sortedindices[0:20]]
 print 'democrats: ', topDemwords
 
 sortedindices=[i[0] for i in sorted(enumerate(coefficientsRep),key=lambda x:(coefficientsDem[x[0]]-coefficientsRep[x[0]]))]	
 topRepwords=[word for word in vectorizerRepubDem.get_feature_names()]
-topRepwords=[topRepwords[ind] for ind in sortedindices[0:10]]
+topRepwords=[topRepwords[ind] for ind in sortedindices[0:20]]
 print 'republican: ',topRepwords
 
 print totalScore/len(repubAndDemMatrix)
+f=open('wordsInterest.txt','w')
+for word in zip(topRepwords,topDemwords):
+	f.write(word[0]+'\n')
+	f.write(word[1]+'\n')
+
 

@@ -1,0 +1,161 @@
+bush_sou_2002.txt prob dem: -8.93950557854 predLabel [1] actual labels 0
+Reagan 11_05_1994 (Alzheimer's Disease).txt prob dem: -5.33839332467 predLabel [1] actual labels 1
+HClinton 09_05_1995 (Women's Rights).txt prob dem: -4.74853915949 predLabel [1] actual labels 1
+clinton_sou_1997.txt prob dem: -4.74796168818 predLabel [1] actual labels 1
+Obama 06_19_2013 (Brandenburg Gate).txt prob dem: -4.33008680731 predLabel [1] actual labels 1
+carter_sou_1978.txt prob dem: -4.29168352648 predLabel [1] actual labels 1
+bush_sou_2004.txt prob dem: -4.16545251685 predLabel [1] actual labels 0
+Reagan 06_08_1982 (Address to Members of the British Parliament).txt prob dem: -4.16291388509 predLabel [1] actual labels 1
+Obama 05_09_2013 (Manufacturing and Economic Progress).txt prob dem: -4.09740046955 predLabel [1] actual labels 1
+LBJohnson 4_11_1965(Educ.Bill).txt prob dem: -3.84658315 predLabel [1] actual labels 1
+bush_sou_2006.txt prob dem: -3.82313687004 predLabel [1] actual labels 1
+Obama 04_18_2013 (Interfaith Memorial Service, Boston Marathon).txt prob dem: -3.79220961932 predLabel [1] actual labels 1
+robert_kennedy_mlk_assassination.txt prob dem: -3.73332578559 predLabel [1] actual labels 1
+Obama 07_01_2013 (Tanzania Business Leaders).txt prob dem: -3.65308061216 predLabel [1] actual labels 1
+Reagan 05_31_1988 (Moscow State University).txt prob dem: -3.61383390629 predLabel [1] actual labels 1
+clinton_sou_1999.txt prob dem: -3.42392425899 predLabel [1] actual labels 1
+bush_sou_1989.txt prob dem: -3.4239075522 predLabel [1] actual labels 1
+Obama 06_25_2013 (Climate Change Georgetown).txt prob dem: -3.27025312103 predLabel [1] actual labels 1
+bush_sou_1991.txt prob dem: -3.11614460189 predLabel [1] actual labels 1
+LBJohnson 3_15_1965(Promise).txt prob dem: -2.98926879298 predLabel [1] actual labels 1
+Ford 12_7_1975(Hawaii).txt prob dem: -2.97619398309 predLabel [1] actual labels 1
+macarthur_truth_duty_honor.txt prob dem: -2.97485946572 predLabel [1] actual labels 1
+reagan_sou_1988.txt prob dem: -2.95419699773 predLabel [1] actual labels 1
+Ford 9_16_1974(DraftDodgers).txt prob dem: -2.84918384733 predLabel [1] actual labels 1
+Obama 02_15_2013 (Families, Communities, and the Middle Class).txt prob dem: -2.56880269812 predLabel [1] actual labels 1
+Obama 07_18_2013 (Affordable Care Act Update).txt prob dem: -2.41794448936 predLabel [1] actual labels 1
+Obama 08_31_2013 (Deliberate, Syria situation).txt prob dem: -2.41037197001 predLabel [1] actual labels 1
+Bush1_Radio_Economy.txt prob dem: -2.4073335616 predLabel [1] actual labels 1
+reagan_a_time_for_choosing.txt prob dem: -2.3999140255 predLabel [1] actual labels 0
+reagan_sou_1985.txt prob dem: -2.33565175514 predLabel [1] actual labels 1
+barbara_jordan_dnc_keynote.txt prob dem: -2.33324921495 predLabel [1] actual labels 1
+Obama 05_19_2013 (Morehouse College).txt prob dem: -2.20483819731 predLabel [1] actual labels 1
+Obama 04_25_2013 (Explosion in West).txt prob dem: -2.20144244647 predLabel [1] actual labels 0
+reagan_sou_1983.txt prob dem: -2.1167533589 predLabel [1] actual labels 1
+Bush2 09_11_2001.txt prob dem: -1.95861094668 predLabel [1] actual labels 1
+Nixon 01_20_1973 (Inaug. Add).txt prob dem: -1.91384632541 predLabel [1] actual labels 1
+Reagan 03_04_1987 (Iran Arms and Contra Aid Controversy).txt prob dem: -1.88318364233 predLabel [1] actual labels 0
+Bush2_AIDS_Research.txt prob dem: -1.88171005446 predLabel [1] actual labels 1
+Ford 6_19_1976(RNC).txt prob dem: -1.86240675023 predLabel [1] actual labels 1
+LBJohnson 7_30_1965(Medicare).txt prob dem: -1.84735156153 predLabel [1] actual labels 1
+Obama 09_10_2013 (Syria).txt prob dem: -1.75110778483 predLabel [1] actual labels 1
+Reagan 03_08_1985 (Creators of the Future).txt prob dem: -1.74948413536 predLabel [1] actual labels 0
+LBJohnson 1_27_1967(Space).txt prob dem: -1.60706598003 predLabel [1] actual labels 1
+Reagan 01_20_1985 (Inaug. Add.).txt prob dem: -1.58846558799 predLabel [1] actual labels 1
+.DS_Store prob dem: -1.55507705105 predLabel [1] actual labels 0
+Bush1_Radio_LA_Visit.txt prob dem: -1.52184668801 predLabel [1] actual labels 1
+clinton_sou_1998.txt prob dem: -1.51763185684 predLabel [1] actual labels 1
+bush_sou_1990.txt prob dem: -1.50432162245 predLabel [1] actual labels 1
+Bush2_Radio_Address3.txt prob dem: -1.29546596851 predLabel [1] actual labels 1
+Obama 08_22_2013 (college affordability).txt prob dem: -1.28117142505 predLabel [1] actual labels 1
+clinton_sou_1995.txt prob dem: -1.24948952146 predLabel [1] actual labels 1
+Reagan 03_23_1983 (National Security).txt prob dem: -1.14832251498 predLabel [1] actual labels 1
+Bush1_Radio_DomesticReform.txt prob dem: -1.13937302267 predLabel [1] actual labels 0
+Bush1_Radio_Governmental_Reform.txt prob dem: -1.13717226811 predLabel [1] actual labels 1
+Bush1_Radio_Welfare_Reform.txt prob dem: -1.08072446693 predLabel [1] actual labels 1
+Bush2_Radio_Address.txt prob dem: -1.00891584158 predLabel [1] actual labels 1
+Bush1_Radio_Trade_Reform.txt prob dem: -0.99192655101 predLabel [1] actual labels 1
+Reagan 02_18_1983 (We Will Not Be Turned Back).txt prob dem: -0.979600003925 predLabel [1] actual labels 1
+Reagan 03_23_1993 (10th anniversary of Strategic Defense Initiative).txt prob dem: -0.965067946174 predLabel [1] actual labels 1
+Reagan 11_11_1988 (V-Day Ceremony Address).txt prob dem: -0.929642350223 predLabel [1] actual labels 1
+Reagan 01_28_1986 (Challenger space shuttle crash).txt prob dem: -0.872533101092 predLabel [1] actual labels 1
+Obama 02_26_2013 (Remarks to Shipbuilders).txt prob dem: -0.865076281016 predLabel [1] actual labels 0
+reagan_sou_1984.txt prob dem: -0.827722351951 predLabel [1] actual labels 1
+Obama 04_08_2013 (Reducing Gun Violence).txt prob dem: -0.816813961253 predLabel [1] actual labels 1
+LBJohnson 1_20_1965 (Inaug. Add).txt prob dem: -0.809233884583 predLabel [1] actual labels 1
+JFK 1_20_1961 (Inaug. Add).txt prob dem: -0.795051675282 predLabel [1] actual labels 0
+Obama 06_30_2013 (Cape Town Remarks).txt prob dem: -0.775965638889 predLabel [1] actual labels 1
+Clinton 6_6_1994(Cemetery).txt prob dem: -0.758749538418 predLabel [1] actual labels 1
+Reagan 1986 (Forward For Freedom).txt prob dem: -0.746427081309 predLabel [1] actual labels 1
+clinton_sou_1994.txt prob dem: -0.745330642405 predLabel [1] actual labels 1
+Bush2 01_20_2005 (Inaug Add. 2).txt prob dem: -0.730375256834 predLabel [1] actual labels 0
+Obama 05_17_2013 (Jobs and the Way Forward).txt prob dem: -0.719078477046 predLabel [1] actual labels 0
+bush_sou_2001.txt prob dem: -0.718525326293 predLabel [1] actual labels 1
+obama_state_of_the_union_2012_1.txt prob dem: -0.703300617979 predLabel [1] actual labels 0
+clinton_sou_1996.txt prob dem: -0.691617212837 predLabel [0] actual labels 1
+cuomo_dnc_keynote.txt prob dem: -0.674239444313 predLabel [0] actual labels 1
+wilson_war_message.txt prob dem: -0.67298583225 predLabel [0] actual labels 0
+Obama 02_14_2013 (Early Childhood Education).txt prob dem: -0.670384222474 predLabel [0] actual labels 0
+nixon_silent_majority.txt prob dem: -0.660388600813 predLabel [0] actual labels 0
+Clinton 12_8_1993(NAFTA).txt prob dem: -0.643829969914 predLabel [0] actual labels 1
+Obama 08_15_2013 (Egypt).txt prob dem: -0.643222774182 predLabel [0] actual labels 1
+Obama 01_20_2009 (Inaug. Address 1).txt prob dem: -0.630055668168 predLabel [0] actual labels 1
+jfkennedy_ich_bin_ein.txt prob dem: -0.628389689851 predLabel [0] actual labels 0
+reagan_sou_1987.txt prob dem: -0.628362319413 predLabel [0] actual labels 0
+LBJohnson 03_31_1968 (No Reelection).txt prob dem: -0.626588505561 predLabel [0] actual labels 1
+Reagan 1961 (Radio Address on Socialized Medicine).txt prob dem: -0.617226816558 predLabel [0] actual labels 0
+Obama 04_25_2013 (Dedication of Bush Library).txt prob dem: -0.597409329546 predLabel [0] actual labels 1
+Ford 10_8_1974 (WIN).txt prob dem: -0.596664077636 predLabel [0] actual labels 0
+Clinton 6_25_1996(VictimRights).txt prob dem: -0.552647790453 predLabel [0] actual labels 1
+johnson_we_shall_overcome.txt prob dem: -0.547498968849 predLabel [0] actual labels 0
+Bush1_Job_Training.txt prob dem: -0.522829442285 predLabel [0] actual labels 0
+Obama 08_06_2013 (housing and economy).txt prob dem: -0.501581339994 predLabel [0] actual labels 0
+Reagan 06_12_1987 (Tear Down This Wall).txt prob dem: -0.496067206147 predLabel [0] actual labels 0
+Reagan 09_05_1983 (Korean Airline Massacre).txt prob dem: -0.477878002571 predLabel [0] actual labels 0
+Obama 04_29_2013 (National Academy of Sciences).txt prob dem: -0.47235250869 predLabel [0] actual labels 1
+Bush1 01_20_1989 (Inaug Add).txt prob dem: -0.461084309742 predLabel [0] actual labels 0
+Eisenhower 1_20_1953 (Inaug Add).txt prob dem: -0.448484419052 predLabel [0] actual labels 0
+Nixon 01_20_1969 (Inaug. Add).txt prob dem: -0.441361915201 predLabel [0] actual labels 0
+kennedy_address_to_greater_houston.txt prob dem: -0.418965031082 predLabel [0] actual labels 0
+reagan_sou_1986.txt prob dem: -0.416995422869 predLabel [0] actual labels 1
+Obama 03_25_2013 (Immigration and Citizenship).txt prob dem: -0.412734020084 predLabel [0] actual labels 0
+Reagan 10_27_1964 (A Time for Choosing, "The Speech").txt prob dem: -0.404194710959 predLabel [0] actual labels 1
+Clinton 01_20_1997.txt prob dem: -0.391577572241 predLabel [0] actual labels 0
+Clinton 10_16_1995(Race).txt prob dem: -0.388400247926 predLabel [0] actual labels 1
+Reagan 06_08_1982 (Evil Empire 1).txt prob dem: -0.378951535515 predLabel [0] actual labels 0
+Reagan 02_26_1982 (The Agenda Is Victory).txt prob dem: -0.365384466038 predLabel [0] actual labels 1
+Ford 4_10_1975(ForiegnPolicy).txt prob dem: -0.357616200883 predLabel [0] actual labels 0
+carter_sou_1981.txt prob dem: -0.349463887822 predLabel [0] actual labels 0
+Obama 09_24_2013 (Diplomatic Path, Address to UN General Assembly).txt prob dem: -0.326529143863 predLabel [0] actual labels 0
+bush_sou_1992.txt prob dem: -0.298718793579 predLabel [0] actual labels 1
+Obama 06_11_2013 (immigration reform).txt prob dem: -0.286171113761 predLabel [0] actual labels 0
+carter_sou_1979.txt prob dem: -0.278513560711 predLabel [0] actual labels 0
+Reagan 06_06_1984 (D-Day Anniversary).txt prob dem: -0.239761056454 predLabel [0] actual labels 0
+bush_sou_2008.txt prob dem: -0.227227473748 predLabel [0] actual labels 0
+Obama 03_21_2013 (Address to Israel).txt prob dem: -0.220078751567 predLabel [0] actual labels 0
+Obama 02_13_2013 (Remarks to Workers in North Carolina).txt prob dem: -0.217491081562 predLabel [0] actual labels 0
+reagan_sou_1982.txt prob dem: -0.188376645906 predLabel [0] actual labels 0
+Bush2 01_20_2001 (Inaug Add. 1).txt prob dem: -0.171948260903 predLabel [0] actual labels 1
+Obama 05_23_2013 (Drones, War, Defense).txt prob dem: -0.171396518699 predLabel [0] actual labels 0
+Reagan 07_17_1980 (Nomination Acceptance Address).txt prob dem: -0.170143690406 predLabel [0] actual labels 0
+reagan_sou_1981.txt prob dem: -0.149085913324 predLabel [0] actual labels 0
+Obama 04_27_2013 (White House Correspondents' Dinner).txt prob dem: -0.140595330363 predLabel [0] actual labels 0
+Clinton 01_20_1993.txt prob dem: -0.132150615581 predLabel [0] actual labels 0
+LBJohnson 5_22_1964(Michigan).txt prob dem: -0.120060866046 predLabel [0] actual labels 0
+Obama 09_22_2013 (Memorial Victims Navy Yard Shooting).txt prob dem: -0.116002681675 predLabel [0] actual labels 1
+Reagan 1987 (A Future that Works).txt prob dem: -0.110009870778 predLabel [0] actual labels 1
+carter_sou_1980.txt prob dem: -0.103878984056 predLabel [0] actual labels 0
+Bush3_Association_Manufacturers.txt prob dem: -0.0927142184701 predLabel [0] actual labels 0
+Ford 9_8_1974(Pardon).txt prob dem: -0.0824858501687 predLabel [0] actual labels 0
+Obama 01_29_2013 (Immigration Reform).txt prob dem: -0.0734278993114 predLabel [0] actual labels 0
+bush_sou_2007.txt prob dem: -0.072859907104 predLabel [0] actual labels 0
+roosevelt_pearl_harbor.txt prob dem: -0.0723905792725 predLabel [0] actual labels 0
+clinton_sou_1993.txt prob dem: -0.0698019667825 predLabel [0] actual labels 0
+bush_sou_2005.txt prob dem: -0.0549656101358 predLabel [0] actual labels 0
+Reagan 01_20_1981 (Inaug. Add.).txt prob dem: -0.0546460051337 predLabel [0] actual labels 0
+Obama 04_03_2013 (Gun Control, Remarks to Denver Police).txt prob dem: -0.0544259730405 predLabel [0] actual labels 0
+LBJohnson 06_04_1965 (Civil Rights Commencement Address).txt prob dem: -0.0531764926388 predLabel [0] actual labels 0
+Obama 05_10_2013 (Benefits of Obamacare).txt prob dem: -0.0530090424722 predLabel [0] actual labels 0
+Reagan 02_11_1988 (On the Frontier of Freedom).txt prob dem: -0.0445669721615 predLabel [0] actual labels 0
+Bush2_Radio_Address2.txt prob dem: -0.0428022972601 predLabel [0] actual labels 0
+bush_sou_2003.txt prob dem: -0.0395479466581 predLabel [0] actual labels 0
+Reagan 03_02_1984 (Our Noble Vision, An Opportunity For All).txt prob dem: -0.0345854254896 predLabel [0] actual labels 0
+Reagan 01_11_1989 (Farewell Address).txt prob dem: -0.0293966623303 predLabel [0] actual labels 0
+Obama 02_04_2013 (Preventing Gun Violence).txt prob dem: -0.0202817490888 predLabel [0] actual labels 0
+LBJohnson 12_23_1963(Joint Session).txt prob dem: -0.0167404235434 predLabel [0] actual labels 0
+nixon_checkers.txt prob dem: -0.0110309493609 predLabel [0] actual labels 0
+Obama 08_28_2013 (I Have A Dream Remarks).txt prob dem: -0.00924854143107 predLabel [0] actual labels 0
+Obama 08_07_2013 (National Security and War).txt prob dem: -0.00858294684897 predLabel [0] actual labels 0
+jesse_jackson_dnc_address.txt prob dem: -0.00711149788873 predLabel [0] actual labels 0
+Carter 01_20_1997 (Inaug Add.).txt prob dem: -0.00658110215381 predLabel [0] actual labels 0
+Eisenhower 1_20_1957 (Inaug Add).txt prob dem: -0.00643338774679 predLabel [0] actual labels 0
+Reagan 04_18_1983 (Embassy Bombing in Beirut).txt prob dem: -0.00548951757447 predLabel [0] actual labels 0
+obama_state_of_the_union_2013.txt prob dem: -0.00376921516127 predLabel [0] actual labels 0
+Bush2_Elementary_School.txt prob dem: -0.00328036641105 predLabel [0] actual labels 0
+Obama 05_24_2013 (U.S. Naval Academy).txt prob dem: -0.00327428412254 predLabel [0] actual labels 0
+clinton_sou_2000.txt prob dem: -0.00198162686592 predLabel [0] actual labels 0
+Obama 07_19_2013 (Trayvon Martin).txt prob dem: -0.00105786121078 predLabel [0] actual labels 0
+eisenhower_farewell.txt prob dem: -0.000997425652253 predLabel [0] actual labels 0
+Clinton 9_22_1993 (HCR).txt prob dem: -7.28221500669e-05 predLabel [0] actual labels 0
+Reagan 03_08_1983 (Evil Empire).txt prob dem: -1.06643382656e-06 predLabel [0] actual labels 0
+Clinton 9_13_1993(Israel_PalAgree).txt prob dem: 0.0 predLabel [0] actual labels 0

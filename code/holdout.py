@@ -2,6 +2,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 import numpy
 from numpy import vstack
 from splitter import DataSplitter
+import getFileNames as gf
 
 class Holdout:
 	def __init__(self, dataDir, model=None, maxHoldout=1):
@@ -42,7 +43,7 @@ class Holdout:
 		"""
 		assert self.model, "Must set model before running"
 		assert self.featureMatrix.any(), "Must extract features before running"
-
+		files=gf.getFileNames()
 		for numHoldout in range(self.maxHoldout, self.maxHoldout + 1):
 			print "\n\tRunning Holdout: ", str(numHoldout)
 
@@ -52,6 +53,7 @@ class Holdout:
 			repMisses=0
 			demMisses=0
 			totalScore = 0
+			ranks=[]
 			for i, holdout in enumerate(range(numExamples)):
 				if i % numHoldout and i != 0: continue
 				print i
@@ -62,38 +64,28 @@ class Holdout:
 				trainExamples = vstack([self.featureMatrix[:holdout], self.featureMatrix[finalHoldout:]])
 				trainLabels = self.labels[:holdout] + self.labels[finalHoldout:]	
 				if normalize:
-					Z = 0
+					Z = numpy.sum(trainExamples[:,i])
+					avg=float(Z)/trainExamples.shape[0]
+					stdErr=numpy.std(trainExamples[:,i])
+					if stdErr==0:
+						stdErr=.00001
 					##holdouts=holdouts.T
 					for i in range(holdouts.shape[1]):
-						Z = numpy.sum(holdouts[:,i])
-						avg=float(Z)/holdouts.shape[0]
 						if numpy.std(holdouts[:,i]):
 							holdouts[:,i]-=avg
-							holdouts[:,i]/=numpy.std(holdouts[:,i])
-						if not numpy.std(holdouts[:,i]) and Z:
-							print numpy.std(holdouts[:,i])
-						
-							for j in  holdouts[:,i]:
-								print j
-					##holdouts=holdouts.T	##print numpy.sum(holdouts[i,:])
-					Z = 0
+							holdouts[:,i]/=stdErr
 					##trainExamples=trainExamples.T
 					for i in range(trainExamples.shape[1]):
-						Z = numpy.sum(trainExamples[:,i])
-						avg=float(Z)/trainExamples.shape[0]
-						if not numpy.std(trainExamples[:,i]) and Z:
-							print trainExamples[:,i]
-							print 'hi'
-							print trainExamples.size
 						if numpy.std(trainExamples[:,i]):
 							trainExamples[:,i]-=avg
-							trainExamples[:,i]/=numpy.std(trainExamples[:,i])						
+							trainExamples[:,i]/=stdErr						
 						
 							##print numpy.sum(trainExamples[i,:])
 					##trainExamples=trainExamples.T
 				# print '...scoring: ' 
 				self.model.fit(trainExamples, trainLabels)
-				predicted_labels=self.model.predict(holdouts)	
+				predicted_labels=self.model.predict(holdouts)
+				ranks.append((self.model.predict_log_proba(holdouts),files[i],predicted_labels,self.labels[i]))		
 				for i,pred in enumerate(predicted_labels):
 					if not pred==holdoutLabels[i]:
 						if holdoutLabels[i]:
@@ -104,3 +96,9 @@ class Holdout:
 
 			print '\tAverage Score: ', 1-(demMisses+repMisses)/float(numExamples), ' ', totalScore/float(numExamples)
 			print '\tMissed ', demMisses, ' Democrats and ',repMisses, " Republicans"
+			print ranks[0][0][0]
+			speeches= sorted(ranks, key=lambda speech:speech[0][0][0])
+			f=open('rankedSpeeches.txt','w')
+			for speech in speeches:
+				f.write(speech[1]+' prob dem: '+str(speech[0][0][0]) +' predLabel '+str(speech[2])+ ' actual labels '+str(speech[3])+'\n')
+
