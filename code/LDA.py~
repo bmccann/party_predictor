@@ -5,13 +5,13 @@ import getFileNames as gf
 import sys
 
 [repubAndDemMatrix,vectorizerRepubDem,labels]=VF.extractWordCounts(True,True,False)
-labels = 2 * np.ones(len(labels)) - np.array(labels) 
+#labels = 2 * np.ones(len(labels)) - np.array(labels) 
 #play around with the number of parameters for LDA! (just enter a number in the brackets "()"; default is none)
-#clf = LDA() # <- add number of params here!
-#clf.fit(repubAndDemMatrix, labels)
+clf = LDA() # <- add number of params here!
+clf.fit(repubAndDemMatrix, labels)
 
-#print('Training error is')
-#print(clf.score(repubAndDemMatrix, labels))
+print('Training error is')
+print(clf.score(repubAndDemMatrix, labels))
 
 totalCorrect = 0
 sz = len(labels)
@@ -25,16 +25,20 @@ def getLDAMat(trainMat, trainLabels, k):
 '''
 
 for i in range(len(labels)):
-	clf = LDA()
-	
+	#clf = LDA()
 	#trainMat = repubAndDemMatrix
 	#trainLabels = labels
-	
 	trainMat = np.concatenate((repubAndDemMatrix[0:i],repubAndDemMatrix[i+1:sz]), axis = 0)
 	trainLabels = np.concatenate((labels[0:i], labels[i+1:sz]), axis = 0)
-	#trainLabels = labels[0:i] + labels[i+1:sz]
 	
+	
+	#trainMat = repubAndDemMatrix[0:163]
+	#trainLabels = labels[0:163]
+	print type(trainMat)
+	print type(trainLabels)
+	#trainLabels = labels[0:i] + labels[i+1:sz]
 	clf.fit(trainMat, trainLabels)
+	print "Hello"
 	#clf.fit(repubAndDemMatrix, labels)
 	#clf = getLDAMat(trainMat, trainLabels, 5);
 	if clf.predict([repubAndDemMatrix[i].tolist()]) == labels[i]:
