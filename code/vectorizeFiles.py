@@ -19,7 +19,7 @@ def extractWordCounts(includeRepublican,includeDemocrat,includeIndependent):
 		os.chdir('../data/democrat/')
 		for fileName in os.listdir('.'):
 			if not (fileName == 'README.md' or fileName ==
-					'.DS_Store'):
+					'.DS_Store' or fileName=='carter_sou_1981.txt' or fileName=='cuomo_dnc_keynote.txt'):
 				##if fileName=='wilson_war_message.txt':
 				##print(fileName) print 
 				corpus.append(open(fileName).read())
