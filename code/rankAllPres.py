@@ -71,8 +71,14 @@ else:
 			totalScoreRepub/=len(nameToIdx[repubOrder[j]])
 			ranks.append(totalScoreDem)
 			ranks.append(totalScoreRepub)
-			print totalScoreDem,demOrder[j]
-			print totalScoreRepub,repubOrder[j]
+			print
+			print totalScoreDem,demOrder[j], "(% dem speeches)"
+			print np.median(totalScoreVecDem[:, 0]), "(median)"
+			print np.mean(totalScoreVecDem[:, 0]), "(mean)"
+			print
+			print totalScoreRepub,repubOrder[j], "(% dem speeches)"
+			print np.median(totalScoreVecRepub[:, 0]), "(median)"
+			print np.mean(totalScoreVecRepub[:, 0]), "(mean)"
 ranks=np.array(ranks)
 ##print ranks
 order=np.argsort(ranks)
