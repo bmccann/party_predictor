@@ -1,0 +1,6 @@
+
+Extracting Features...
+344
+(344, 22138)
+['obama', 'clinton', 'jfk', 'lbj', 'truman', 'carter']
+['ford', 'reagan', 'nixon', 'bush1', 'bush2']

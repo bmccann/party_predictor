@@ -110,7 +110,7 @@ if  __name__ == '__main__':
 	Usage: python logistic_regression.py <penalties> <holdout> <constants>
 		where penalties and constants are comma delimited strings
 	"""
-	penalties, constants, numHoldout, split = ['l1'], [ .1, .3, .5, .7], 34, .7
+	penalties, constants, numHoldout, split = ['l1'], [ .5], 1, .7
 
 	holdout(penalties, constants, numHoldout)
 	# runOnSplit(penalties, constants, split)

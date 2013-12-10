@@ -62,10 +62,10 @@ for i in range(len(labels)):
 	#clf = getLDAMat(trainMat, trainLabels, 5);
 	if clf.predict([repubAndDemMatrix[i].tolist()]) == labels[i]:
 		totalCorrect = totalCorrect + 1
-	print clf.coef_
-	print 'predicted =', clf.predict([repubAndDemMatrix[i].tolist()]), '; actual =', labels[i]
-	print(i)
-	print(float(totalCorrect) / float(i+1))
+	# print clf.coef_
+	# print 'predicted =', clf.predict([repubAndDemMatrix[i].tolist()]), '; actual =', labels[i]
+	# print(i)
+	# print(float(totalCorrect) / float(i+1))
 
 
 print('LOOCV test error is') #0.748466257669

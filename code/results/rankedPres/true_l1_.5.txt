@@ -1,0 +1,46 @@
+
+Extracting Features...
+344
+(344, 22138)
+['obama', 'clinton', 'jfk', 'lbj', 'truman', 'carter']
+['ford', 'reagan', 'nixon', 'bush1', 'bush2']
+
+0.318181818182 obama (% dem speeches)
+0.0325491941795 (median)
+0.290806230762 (mean)
+
+0.473684210526 ford (% dem speeches)
+0.582692745303 (median)
+0.531512626889 (mean)
+
+0.333333333333 clinton (% dem speeches)
+0.08225576062 (median)
+0.315595626323 (mean)
+
+0.75 reagan (% dem speeches)
+0.0368476076274 (median)
+0.271212012304 (mean)
+
+0.4 jfk (% dem speeches)
+0.403927704421 (median)
+0.415699634473 (mean)
+
+0.416666666667 nixon (% dem speeches)
+0.715410254197 (median)
+0.585141872812 (mean)
+
+0.333333333333 lbj (% dem speeches)
+0.369087507358 (median)
+0.396975195523 (mean)
+
+0.5 bush1 (% dem speeches)
+0.525434518973 (median)
+0.511822346801 (mean)
+
+0.368421052632 truman (% dem speeches)
+0.255775051738 (median)
+0.405361718633 (mean)
+
+0.625 bush2 (% dem speeches)
+0.225326243338 (median)
+0.364649413049 (mean)

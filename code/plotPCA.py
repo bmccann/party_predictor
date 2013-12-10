@@ -3,8 +3,17 @@ import vectorizeFiles as VF
 import getFileNames as gf
 import matplotlib.pyplot as plot
 import numpy as np
-[repubAndDemMatrix,vectorizerRepubDem, labels]=VF.extractWordCounts(True,True,False)
-k = 2
+
+
+
+# from feature_extractor import FeatureExtractor
+
+
+# fe = FeatureExtractor(1)
+# featurized = fe.featurizeFiles('../data')
+# classNames, repubAndDemMatrix, labels = featurized[:3]
+[repubAndDemMatrix,vectorizerRepubDem,labels]=VF.extractWordCounts(True,True,False)
+k = 3
 files=gf.getFileNames()
 transformed = PCA.getPCAMat(repubAndDemMatrix, k)
 repub=np.array([list(x) for i,x in enumerate(transformed) if labels[i]==1])
@@ -13,7 +22,8 @@ plot.figure()
 plot.scatter(repub[:,0],repub[:,1],c='r',marker='x')
 plot.scatter(dem[:,0],dem[:,1],c='b',marker='x')
 ##plot.annotate(s=files[0],xy=transformed[0])
-plot.savefig('docPCA.png')
+plot.savefig('results/images/VFPCA.png')
+# plot.savefig('results/images/PCA.png')
 
 '''
 transformedWords=PCA.getPCAMat(repubAndDemMatrix.T, k)

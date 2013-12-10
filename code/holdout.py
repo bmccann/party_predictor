@@ -30,6 +30,7 @@ class Holdout:
 		self.model_params = params
 
 	def run(self):
+		
 		"""
 		runs hold out given the current set of parameters. 
 		must have set a model and extracted features
@@ -94,7 +95,7 @@ class Holdout:
 			if len(rankedExamples):
 				#most democrat will appear first in file
 				examples = sorted(rankedExamples, key=lambda e: e[0][1]) 
-				fileName = 'results/rankedExamples/LRholdout'
+				fileName = 'results/rankedExamples/LRholdout_' + str(numHoldout)
 				for param in self.model_params:
 					fileName += '_' + str(param)
 				fileName += '.txt'

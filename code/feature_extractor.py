@@ -87,8 +87,10 @@ class FeatureExtractor():
 		data = trainData + devData
 
 		print "\nExtracting Features..."
-		cv = CountVectorizer(stop_words='english', strip_accents='ascii', 
-												 charset_error='replace',dtype=numpy.float32,binary=False);
+		cv=CountVectorizer(strip_accents='ascii',stop_words='english',charset_error='replace');
+
+		# cv = CountVectorizer(stop_words='english', strip_accents='ascii', 
+		# 										 charset_error='replace',dtype=numpy.float32);
 		fittedCV = cv.fit_transform(data);
 		featureMatrix = fittedCV.todense()
 

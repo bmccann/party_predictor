@@ -2,8 +2,13 @@ import numpy as np
 import vectorizeFiles as VF
 #from sklearn.svm import LinearSVC <- different then a linear kernel
 from sklearn import svm, grid_search
+from feature_extractor import FeatureExtractor
 
-[repubAndDemMatrix,vectorizerRepubDem, labels]=VF.extractWordCounts(True,True,False)
+
+fe = FeatureExtractor(1)
+featurized = fe.featurizeFiles('../data')
+classNames, repubAndDemMatrix, labels = featurized[:3]
+# [repubAndDemMatrix,vectorizerRepubDem, labels]=VF.extractWordCounts(True,True,False)
 parameters = {'kernel':('linear','rbf','poly','sigmoid'), 'C':[1,2,3,4,5,6,7,8,9,10], 'gamma':[1.0]}
 svr = svm.SVC()
 clf = grid_search.GridSearchCV(svr, parameters)
@@ -12,6 +17,23 @@ print clf.best_estimator_ #<-lots of detail
 print clf.best_params_ #<-more useful
 print clf.best_score_ #<-this is the cv error
 print clf.score(repubAndDemMatrix, labels) #<-training error
+
+#output from vectorizeFiles
+# SVC(C=1, cache_size=200, class_weight=None, coef0=0.0, degree=3, gamma=1.0,
+# kernel=linear, probability=False, shrinking=True, tol=0.001,
+# verbose=False)
+# {'kernel': 'linear', 'C': 1, 'gamma': 1.0}
+# 0.738367658276
+# 1.0
+
+# output when using shuffled training data
+# SVC(C=1, cache_size=200, class_weight=None, coef0=0.0, degree=3, gamma=1.0,
+#   kernel=linear, probability=False, shrinking=True, tol=0.001,
+#   verbose=False)
+# {'kernel': 'linear', 'C': 1, 'gamma': 1.0}
+# 0.752987541317
+# 1.0
+
 
 
 # Below is manually created leave-one-out cross validation testing, however the code above is better and faster

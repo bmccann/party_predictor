@@ -1,3 +1,3 @@
-	democrat error: 0.24
-	republican error: 0.25730994152
-	Average Score: 0.747058823529
+	democrat error: 0.242774566474
+	republican error: 0.263157894737
+	Average Score: 0.744117647059
