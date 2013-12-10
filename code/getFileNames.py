@@ -14,7 +14,8 @@ def getFileNames():
 
 	os.chdir('../data/democrat/')
 	for fileName in os.listdir('.'):
-		if not (fileName == 'README.md' or fileName=='carter_sou_1981.txt' or fileName=='cuomo_dnc_keynote.txt'):
+		# if not (fileName == 'README.md' or fileName=='carter_sou_1981.txt' or fileName=='cuomo_dnc_keynote.txt'):
+		if not fileName == 'README.md':	
 			Names = np.append(Names, fileName)
 	os.chdir('../../code')
 

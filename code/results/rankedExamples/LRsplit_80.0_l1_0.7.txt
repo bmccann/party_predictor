@@ -1,0 +1,141 @@
+../data/republican/Ford_1_19_1976_sou.txt
+	 Probability of class democrat: 4.59758656923e-07
+	 Correct: True../data/republican/reagan_sou_1981.txt
+	 Probability of class democrat: 5.8207893372e-07
+	 Correct: True../data/republican/Reagan 03_08_1983 (Evil Empire).txt
+	 Probability of class democrat: 3.8406645859e-05
+	 Correct: True../data/republican/CRice 10_01_2002 (Wriston Lecture at Manhattan Institute).txt
+	 Probability of class democrat: 8.2006985504e-05
+	 Correct: True../data/republican/Nixon 06_17_1971 (Drug Abuse Prevention and Control).txt
+	 Probability of class democrat: 0.000104745369493
+	 Correct: True../data/republican/Ford 10_8_1974 (WIN).txt
+	 Probability of class democrat: 0.000787348444744
+	 Correct: True../data/democrat/LBJohnson 5_22_1964(Michigan).txt
+	 Probability of class democrat: 0.000953786826987
+	 Correct: False../data/republican/reagan_sou_1984.txt
+	 Probability of class democrat: 0.00177831331776
+	 Correct: True../data/republican/eisenhower_1_5_1957_doctrine.txt
+	 Probability of class democrat: 0.00306128408056
+	 Correct: True../data/republican/bush1_8_8_1990_invasion_kuwait.txt
+	 Probability of class democrat: 0.00851014052972
+	 Correct: True../data/republican/eisenhower_12_8_1953_atoms_for_peace.txt
+	 Probability of class democrat: 0.013365087375
+	 Correct: True../data/republican/Nixon 08_02_1960 (Remarks of Vice President Nixon, LA International Airport).txt
+	 Probability of class democrat: 0.0177268328356
+	 Correct: True../data/republican/Nixon 08_02_1960 (Remarks of VP Nixon, Airport, Reno).txt
+	 Probability of class democrat: 0.0188395610094
+	 Correct: True../data/republican/Ford_8_19_1976_nomination.txt
+	 Probability of class democrat: 0.0374440087042
+	 Correct: True../data/republican/Reagan 02_11_1988 (On the Frontier of Freedom).txt
+	 Probability of class democrat: 0.0462499467091
+	 Correct: True../data/republican/Nixon 08_03_1960 (Remarks by VP Nixon, International Airport, Honolulu).txt
+	 Probability of class democrat: 0.0712287983514
+	 Correct: True../data/republican/Reagan 06_08_1982 (Evil Empire 1).txt
+	 Probability of class democrat: 0.0746539752312
+	 Correct: True../data/republican/nixon_4_30_1973_first_watergate.txt
+	 Probability of class democrat: 0.098396814227
+	 Correct: True../data/republican/eisenhower_1_20_1953_first_inaug.txt
+	 Probability of class democrat: 0.108085889531
+	 Correct: True../data/republican/eisenhower_farewell.txt
+	 Probability of class democrat: 0.191568294596
+	 Correct: True../data/republican/Goldwater_1984(RNC).txt
+	 Probability of class democrat: 0.196343948407
+	 Correct: True../data/republican/Goldwater_1_3_1964(RunForPres).txt
+	 Probability of class democrat: 0.230853925765
+	 Correct: True../data/republican/Ford_3_29_1975_selective_service.txt
+	 Probability of class democrat: 0.246856425389
+	 Correct: True../data/democrat/Carter_4_25_1980(Iran_Rescue).txt
+	 Probability of class democrat: 0.283138082392
+	 Correct: False../data/democrat/LBJohnson 12_13_1963 (Remarks of Welcome to the Chiefs of Mission of the Diplomatic Corps).txt
+	 Probability of class democrat: 0.290352389353
+	 Correct: False../data/republican/Nixon 08_04_1960 (Speech of VP Nixon in Lihue, Kauai).txt
+	 Probability of class democrat: 0.306726929603
+	 Correct: True../data/republican/Bush2_Elementary_School.txt
+	 Probability of class democrat: 0.331440595869
+	 Correct: True../data/democrat/LBJohnson 12_18_1963 (Signing the Vocational Education Bill).txt
+	 Probability of class democrat: 0.348087370386
+	 Correct: False../data/republican/Nixon 01_20_1973 (Inaug. Add).txt
+	 Probability of class democrat: 0.359718803263
+	 Correct: True../data/democrat/JFK_3_1_1961(Peace_Corps).txt
+	 Probability of class democrat: 0.364039339234
+	 Correct: False../data/republican/Bush1_Radio_Welfare_Reform.txt
+	 Probability of class democrat: 0.44212775357
+	 Correct: True../data/republican/Ford_6_1976_social_security.txt
+	 Probability of class democrat: 0.467374296708
+	 Correct: True../data/republican/Reagan 06_06_1984 (D-Day Anniversary).txt
+	 Probability of class democrat: 0.537499189173
+	 Correct: False../data/republican/Bush1_Radio_LA_Visit.txt
+	 Probability of class democrat: 0.548656832221
+	 Correct: False../data/republican/Bush2_Radio_Address2.txt
+	 Probability of class democrat: 0.685510823384
+	 Correct: False../data/republican/bush1_12_20_1989_panama.txt
+	 Probability of class democrat: 0.692180594198
+	 Correct: False../data/republican/Ford_2_9_1976_older_americans.txt
+	 Probability of class democrat: 0.73525495094
+	 Correct: False../data/democrat/LBJohnson 12_02_1963 (Bill of Rights Day).txt
+	 Probability of class democrat: 0.744896653543
+	 Correct: True../data/democrat/Obama 08_15_2013 (Egypt).txt
+	 Probability of class democrat: 0.769919406614
+	 Correct: True../data/republican/bush1_8_1_1990_un_address.txt
+	 Probability of class democrat: 0.807863417805
+	 Correct: False../data/democrat/JFK_4_27_1961(Press_Pres).txt
+	 Probability of class democrat: 0.826024359145
+	 Correct: True../data/republican/Goldwater_9_1964(OpenCampaign).txt
+	 Probability of class democrat: 0.841159454293
+	 Correct: False../data/democrat/Carter_12_15_1978(China).txt
+	 Probability of class democrat: 0.842544389485
+	 Correct: True../data/democrat/JFK_4_13_1961(LatinDiplo).txt
+	 Probability of class democrat: 0.873570509851
+	 Correct: True../data/democrat/johnson_we_shall_overcome.txt
+	 Probability of class democrat: 0.909730165285
+	 Correct: True../data/democrat/Obama 01_29_2013 (Immigration Reform).txt
+	 Probability of class democrat: 0.91215847983
+	 Correct: True../data/democrat/Obama 02_14_2013 (Early Childhood Education).txt
+	 Probability of class democrat: 0.935960729184
+	 Correct: True../data/democrat/Clinton 12_8_1993(NAFTA).txt
+	 Probability of class democrat: 0.943116411133
+	 Correct: True../data/democrat/Carter_5_22_1977(Notre_Dame).txt
+	 Probability of class democrat: 0.946904085951
+	 Correct: True../data/democrat/LBJohnson 11_25_1963 (Remarks to State Governors after Kennedy Funeral).txt
+	 Probability of class democrat: 0.954378613262
+	 Correct: True../data/democrat/Clinton 6_25_1996(VictimRights).txt
+	 Probability of class democrat: 0.955031166259
+	 Correct: True../data/democrat/Obama 05_24_2013 (U.S. Naval Academy).txt
+	 Probability of class democrat: 0.963896720449
+	 Correct: True../data/democrat/Obama 04_29_2013 (National Academy of Sciences).txt
+	 Probability of class democrat: 0.963974844291
+	 Correct: True../data/democrat/truman_3_29_1952_jefferson_jackson_day.txt
+	 Probability of class democrat: 0.976180302925
+	 Correct: True../data/democrat/JFK_10_22_1962(Arms_Cuba).txt
+	 Probability of class democrat: 0.976789964517
+	 Correct: True../data/democrat/Obama 06_11_2013 (immigration reform).txt
+	 Probability of class democrat: 0.980306082825
+	 Correct: True../data/democrat/JFK_5_25_1961(moon).txt
+	 Probability of class democrat: 0.994433472438
+	 Correct: True../data/democrat/CHlinton 06_07_2008 (Suspension of Presidential Campaign).txt
+	 Probability of class democrat: 0.994557775183
+	 Correct: True../data/democrat/Clinton 10_16_1995(Race).txt
+	 Probability of class democrat: 0.99693213767
+	 Correct: True../data/democrat/Clinton_11_30_1995(MackieMetal).txt
+	 Probability of class democrat: 0.999070318091
+	 Correct: True../data/democrat/Obama 07_18_2013 (Affordable Care Act Update).txt
+	 Probability of class democrat: 0.999265484889
+	 Correct: True../data/democrat/Clinton 9_22_1993 (HCR).txt
+	 Probability of class democrat: 0.99952202336
+	 Correct: True../data/democrat/Obama 06_19_2013 (Brandenburg Gate).txt
+	 Probability of class democrat: 0.999632010468
+	 Correct: True../data/democrat/Obama 07_24_2013 (Economy at Knox College).txt
+	 Probability of class democrat: 0.999891878165
+	 Correct: True../data/democrat/JFK_7_15_1960(DNC_Accept).txt
+	 Probability of class democrat: 0.999946149797
+	 Correct: True../data/democrat/JFK_7_2_1957(Imp).txt
+	 Probability of class democrat: 0.99997797638
+	 Correct: True../data/republican/Reagan 06_12_1987 (Tear Down This Wall).txt
+	 Probability of class democrat: 0.999986554364
+	 Correct: False../data/democrat/CHlinton 12_03_2010 (UN Commission on Status of Women).txt
+	 Probability of class democrat: 0.999990759887
+	 Correct: True../data/democrat/Obama 04_03_2013 (Gun Control, Remarks to Denver Police).txt
+	 Probability of class democrat: 0.999992922291
+	 Correct: True../data/democrat/Obama 06_30_2013 (Cape Town Remarks).txt
+	 Probability of class democrat: 0.999999978527
+	 Correct: True

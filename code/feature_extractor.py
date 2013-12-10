@@ -1,13 +1,15 @@
 from random import shuffle
 import os, os.path
+import numpy
+from sklearn.feature_extraction.text import CountVectorizer
 
-class DataSplitter():
+class FeatureExtractor():
 	def __init__(self, split):
 		"""
 		Usage example: 
-			from splitter import DataSplitter 
-			ds = DataSplitter(split=.7)
-			classNames, trainData, trainLabels, devData, devLabels = ds.splitDir('../data')
+			from feature_extractor import FeatureExtractor 
+			fe = FeatureExtractor(split=.7)
+			classNames, trainFeatureMatrix, trainLabels, devFeatureMatrix, devLabels = fe.featurizeFiles('../data')
 
 		@param (split): a float between 0 and 1, indicating the fraction of the data you want returned 
 		for training (shuffled randomly by default). 
@@ -20,7 +22,7 @@ class DataSplitter():
 		"""
 		self.split = split
 
-	def splitDir(self, inputDir, type='train', randomize=True):
+	def featurizeFiles(self, inputDir, type='train'):
 		"""
 		@param (inputDir): the directory containing subdirectories for each class 
 		@param (type='train'): the type of split you want 
@@ -39,20 +41,24 @@ class DataSplitter():
 		# print "Retrieving file names..."
 		dataFiles = []
 		for d in classDirs:
-			fileNames = [ os.path.join(d, name) for name in os.listdir(d) \
+			labeledFileNames = [ os.path.join(d, name) for name in os.listdir(d) \
 				if os.path.isfile(os.path.join(d, name)) and 'txt' in os.path.join(d, name)]
-			dataFiles.append(fileNames)
+			dataFiles.append(labeledFileNames)
 
 		# print "Splitting Files..."
 		trainFilesAndLabels = []
 		devFilesAndLabels = []
 		for c in range(numClasses):
 			numTrainingFiles = int(self.split * len(dataFiles[c]))
-		 	trainFilesAndLabels.extend([(example, c) for example in dataFiles[c][:numTrainingFiles-1]])
-		 	devFilesAndLabels.extend([(example, c) for example in dataFiles[c][numTrainingFiles-1:]])
+			# shuffles this class of examples so we get a random sample from the class
+			shuffle(dataFiles[c]) 
+		 	trainFilesAndLabels.extend([(example, c) for example in dataFiles[c][:numTrainingFiles]])
+		 	devFilesAndLabels.extend([(example, c) for example in dataFiles[c][numTrainingFiles:]])
 
-		if randomize: shuffle(trainFilesAndLabels)
-		if randomize: shuffle(devFilesAndLabels)
+		# shuffles the train and dev sets of file
+		# so that we don't have all of one class, then all the next, etc.
+		shuffle(trainFilesAndLabels)
+		shuffle(devFilesAndLabels)
 
 		trainFiles, trainLabels = [], []
 		for t in trainFilesAndLabels:
@@ -72,12 +78,20 @@ class DataSplitter():
 		for trainFile in trainFiles:
 			with open(trainFile) as tf:
 				trainData.append(tf.read())
-				if len(trainData[-1])==0:
-					print 'why!!!', trainFile
+
 		for devFile in devFiles:
 			with open(devFile) as tf:
 				devData.append(tf.read())
 
-		return classNames, trainData, trainLabels, devData, devLabels
+		numTraining = len(trainData)
+		data = trainData + devData
+
+		print "\nExtracting Features..."
+		cv = CountVectorizer(stop_words='english', strip_accents='ascii', 
+												 charset_error='replace',dtype=numpy.float32,binary=False);
+		fittedCV = cv.fit_transform(data);
+		featureMatrix = fittedCV.todense()
+
+		return classNames, featureMatrix[:numTraining], trainLabels, featureMatrix[numTraining:], devLabels, trainFiles, devFiles
 
 

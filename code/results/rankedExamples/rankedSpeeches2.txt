@@ -1,0 +1,1029 @@
+Reagan 06_08_1982 (Address to Members of the British Parliament).txt
+	 prob dem: -27.1417421627
+	 Predicted correctly? [False]
+Nixon 11_07_1973 (Policies to Deal with Energy Shortages).txt
+	 prob dem: -13.8648512783
+	 Predicted correctly? [ True]
+Ford_2_9_1976_older_americans.txt
+	 prob dem: -8.43012355286
+	 Predicted correctly? [ True]
+bush1_sou_1990.txt
+	 prob dem: -8.29750857309
+	 Predicted correctly? [ True]
+Ford 6_19_1976(RNC).txt
+	 prob dem: -7.14900278161
+	 Predicted correctly? [ True]
+Ford_7_3_1975_ntl_environment.txt
+	 prob dem: -7.04960522618
+	 Predicted correctly? [ True]
+Palin_9_3_2008(RNC).txt
+	 prob dem: -6.9690398638
+	 Predicted correctly? [ True]
+CHlinton 12_03_2010 (UN Commission on Status of Women).txt
+	 prob dem: -6.7175723735
+	 Predicted correctly? [ True]
+CHlinton 09_14_2012 (Dignified Transfer of Remains Ceremony, Benghazi).txt
+	 prob dem: -6.70698322437
+	 Predicted correctly? [ True]
+bush1_8_2_1990_budget.txt
+	 prob dem: -5.93870767757
+	 Predicted correctly? [ True]
+LBJohnson 12_13_1963 (Remarks of Welcome to the Chiefs of Mission of the Diplomatic Corps).txt
+	 prob dem: -5.78425544449
+	 Predicted correctly? [ True]
+LBJohnson 11_28_1963 (Tgives Address to Nation).txt
+	 prob dem: -5.45343844114
+	 Predicted correctly? [ True]
+bush1_12_20_1989_panama.txt
+	 prob dem: -5.44781744965
+	 Predicted correctly? [ True]
+Ford_12_2_1975_education.txt
+	 prob dem: -5.33060738675
+	 Predicted correctly? [ True]
+Nixon 08_04_1960 (Speech of VP Nixon in Lihue, Kauai).txt
+	 prob dem: -5.32551003192
+	 Predicted correctly? [ True]
+Nixon 01_20_1973 (Inaug. Add).txt
+	 prob dem: -5.23058904702
+	 Predicted correctly? [ True]
+Nixon 08_02_1960 (Press Conference of VP Nixon, Hyatt House, LA).txt
+	 prob dem: -5.14810920252
+	 Predicted correctly? [ True]
+Clinton 01_20_1997.txt
+	 prob dem: -5.01318502324
+	 Predicted correctly? [ True]
+Reagan 03_23_1983 (National Security).txt
+	 prob dem: -4.65474509624
+	 Predicted correctly? [ True]
+Clinton_4_23_1995(Healing).txt
+	 prob dem: -4.58067620729
+	 Predicted correctly? [ True]
+JFK_12_6_1961(Manufacturers).txt
+	 prob dem: -4.48445217346
+	 Predicted correctly? [ True]
+JFK_11_11_1961(VeteransDay).txt
+	 prob dem: -4.47364581752
+	 Predicted correctly? [ True]
+Reagan 1987 (A Future that Works).txt
+	 prob dem: -4.40686146869
+	 Predicted correctly? [False]
+reagan_sou_1983.txt
+	 prob dem: -4.04034328962
+	 Predicted correctly? [ True]
+Nixon 08_24_1960 (VFW Convention, Detroit).txt
+	 prob dem: -4.01651500555
+	 Predicted correctly? [ True]
+Ford_1_19_1976_sou.txt
+	 prob dem: -3.98780689
+	 Predicted correctly? [ True]
+JFK_1_9_1961(On_A_Hill).txt
+	 prob dem: -3.93892795239
+	 Predicted correctly? [ True]
+carter_sou_1979.txt
+	 prob dem: -3.89064269578
+	 Predicted correctly? [ True]
+Bush3_Association_Manufacturers.txt
+	 prob dem: -3.85789167057
+	 Predicted correctly? [ True]
+Carter_10_24_1978(Anti_Inflation).txt
+	 prob dem: -3.63138934509
+	 Predicted correctly? [ True]
+Clinton_7_12_1994(BrandenburgGate).txt
+	 prob dem: -3.59405403564
+	 Predicted correctly? [ True]
+Eisenhower 1_20_1953 (Inaug Add).txt
+	 prob dem: -3.58803034877
+	 Predicted correctly? [ True]
+Reagan 01_20_1985 (Inaug. Add.).txt
+	 prob dem: -3.55136229547
+	 Predicted correctly? [ True]
+eisenhower_1_20_1953_first_inaug.txt
+	 prob dem: -3.54367369273
+	 Predicted correctly? [ True]
+Reagan 03_04_1987 (Iran Arms and Contra Aid Controversy).txt
+	 prob dem: -3.44730138874
+	 Predicted correctly? [ True]
+CHlinton 02_15_2001 (Internet Rights and Wrongs).txt
+	 prob dem: -3.34509377964
+	 Predicted correctly? [ True]
+Obama 07_24_2013 (Economy at Knox College).txt
+	 prob dem: -3.24110603368
+	 Predicted correctly? [ True]
+Ford_4_28_1975_commerce.txt
+	 prob dem: -3.16718743447
+	 Predicted correctly? [ True]
+Nixon 01_20_1969 (Inaug. Add).txt
+	 prob dem: -3.07446445128
+	 Predicted correctly? [ True]
+Obama 07_30_2013 (amazon distribution center).txt
+	 prob dem: -3.0504078726
+	 Predicted correctly? [ True]
+Carter_4_25_1980(Iran_Rescue).txt
+	 prob dem: -3.04989348427
+	 Predicted correctly? [ True]
+truman_8_18_1948_whistlestop_tour.txt
+	 prob dem: -3.03613222117
+	 Predicted correctly? [ True]
+Ford_10_9_1974_privacy.txt
+	 prob dem: -2.89362925924
+	 Predicted correctly? [ True]
+Obama 05_17_2013 (Jobs and the Way Forward).txt
+	 prob dem: -2.88246711628
+	 Predicted correctly? [ True]
+Nixon 08_02_1960 (Speech of VP Nixon, Hadley Field, Whittier College).txt
+	 prob dem: -2.73611282066
+	 Predicted correctly? [ True]
+Nixon 08_03_1960 (Remarks of VP Nixon, Kamehameha Shopping Center, Honolulu).txt
+	 prob dem: -2.7351514605
+	 Predicted correctly? [ True]
+Bush1_Radio_DomesticReform.txt
+	 prob dem: -2.59874666859
+	 Predicted correctly? [ True]
+wilson_war_message.txt
+	 prob dem: -2.5651635984
+	 Predicted correctly? [ True]
+JFK_10_12_1961(UNC).txt
+	 prob dem: -2.5610911416
+	 Predicted correctly? [ True]
+bush1_7_26_1990_disabilities_act.txt
+	 prob dem: -2.51876360852
+	 Predicted correctly? [ True]
+Clinton 12_8_1993(NAFTA).txt
+	 prob dem: -2.50041993535
+	 Predicted correctly? [False]
+Goldwater_1_3_1964(RunForPres).txt
+	 prob dem: -2.42925577775
+	 Predicted correctly? [ True]
+Nixon 10_24_1973 (Veto of the War Powers Resolution).txt
+	 prob dem: -2.4274752066
+	 Predicted correctly? [ True]
+JFK_5_18_1963(Vanderbilt).txt
+	 prob dem: -2.33184432622
+	 Predicted correctly? [ True]
+LBJohnson 1_20_1965 (Inaug. Add).txt
+	 prob dem: -2.26330360006
+	 Predicted correctly? [ True]
+eisenhower_8_23_1956_rnc.txt
+	 prob dem: -2.24981394254
+	 Predicted correctly? [ True]
+clinton_sou_2000.txt
+	 prob dem: -2.19597609665
+	 Predicted correctly? [ True]
+Obama 02_26_2013 (Remarks to Shipbuilders).txt
+	 prob dem: -2.16841318053
+	 Predicted correctly? [ True]
+JFK_7_26_1963(NucBan).txt
+	 prob dem: -2.04007437946
+	 Predicted correctly? [ True]
+robert_kennedy_mlk_assassination.txt
+	 prob dem: -2.01056366952
+	 Predicted correctly? [ True]
+obama_state_of_the_union_2012_1.txt
+	 prob dem: -1.9818203055
+	 Predicted correctly? [ True]
+bush1_sou_1991.txt
+	 prob dem: -1.97029213895
+	 Predicted correctly? [ True]
+Carter_12_15_1978(China).txt
+	 prob dem: -1.96114205128
+	 Predicted correctly? [ True]
+Obama 05_19_2013 (Morehouse College).txt
+	 prob dem: -1.94213058029
+	 Predicted correctly? [ True]
+barbara_jordan_dnc_keynote.txt
+	 prob dem: -1.87514601622
+	 Predicted correctly? [False]
+JFK_7_25_1961(Berlin_Crisis).txt
+	 prob dem: -1.8175960875
+	 Predicted correctly? [False]
+Ford_7_4_1976_bicentennial.txt
+	 prob dem: -1.75754590961
+	 Predicted correctly? [ True]
+truman_6_29_1947_naacp.txt
+	 prob dem: -1.75577993446
+	 Predicted correctly? [False]
+clinton_sou_1997.txt
+	 prob dem: -1.73800065133
+	 Predicted correctly? [ True]
+HClinton 09_05_1995 (Women's Rights).txt
+	 prob dem: -1.72385750456
+	 Predicted correctly? [ True]
+Reagan 02_26_1982 (The Agenda Is Victory).txt
+	 prob dem: -1.71228233647
+	 Predicted correctly? [ True]
+LBJohnson 12_17_1963 (Signing the Clean Air Act).txt
+	 prob dem: -1.70914393602
+	 Predicted correctly? [False]
+Ford 9_16_1974(DraftDodgers).txt
+	 prob dem: -1.70636552728
+	 Predicted correctly? [ True]
+Obama 06_25_2013 (Climate Change Georgetown).txt
+	 prob dem: -1.69678851247
+	 Predicted correctly? [False]
+JFK_5_20_1961(Taxation).txt
+	 prob dem: -1.69311115052
+	 Predicted correctly? [ True]
+clinton_sou_1994.txt
+	 prob dem: -1.68278369841
+	 Predicted correctly? [ True]
+truman_1_20_1949_inaugural.txt
+	 prob dem: -1.67055185967
+	 Predicted correctly? [ True]
+Reagan 07_17_1980 (Nomination Acceptance Address).txt
+	 prob dem: -1.6527437733
+	 Predicted correctly? [ True]
+Nixon 08_03_1960 (TV Press Conference of VP Nixon, Honolulu).txt
+	 prob dem: -1.65091515686
+	 Predicted correctly? [ True]
+Reagan 1961 (Radio Address on Socialized Medicine).txt
+	 prob dem: -1.64741070104
+	 Predicted correctly? [ True]
+CRice 09_18_2008 (German Marshall Fund on US Russian Relations).txt
+	 prob dem: -1.64698199044
+	 Predicted correctly? [False]
+eisenhower_4_16_1953_chance_for_peace.txt
+	 prob dem: -1.61062849659
+	 Predicted correctly? [ True]
+LBJohnson 12_16_1963 (Statement Upon Signing Foreign Assistance Act).txt
+	 prob dem: -1.60404551708
+	 Predicted correctly? [ True]
+Clinton_11_30_1995(MackieMetal).txt
+	 prob dem: -1.58477694804
+	 Predicted correctly? [ True]
+CHlinton 11_29_2010 (Wikileaks Release of Confidential Documents).txt
+	 prob dem: -1.56426729043
+	 Predicted correctly? [False]
+LBJohnson 11_27_1963 (Address Before Joint Session of Congress).txt
+	 prob dem: -1.55887649168
+	 Predicted correctly? [ True]
+JFK_7_15_1960(DNC_Accept).txt
+	 prob dem: -1.50002141354
+	 Predicted correctly? [False]
+Reagan 02_18_1983 (We Will Not Be Turned Back).txt
+	 prob dem: -1.48822693907
+	 Predicted correctly? [False]
+Ford_5_15_1975_toast_iran.txt
+	 prob dem: -1.46785974835
+	 Predicted correctly? [ True]
+eisenhower_farewell.txt
+	 prob dem: -1.46264916761
+	 Predicted correctly? [ True]
+JFK_4_13_1961(LatinDiplo).txt
+	 prob dem: -1.44930896594
+	 Predicted correctly? [ True]
+Obama 05_10_2013 (Benefits of Obamacare).txt
+	 prob dem: -1.42397909822
+	 Predicted correctly? [ True]
+Bush1_Radio_Economy.txt
+	 prob dem: -1.40860718752
+	 Predicted correctly? [ True]
+carter_sou_1980.txt
+	 prob dem: -1.37973796254
+	 Predicted correctly? [ True]
+Ford_6_1976_social_security.txt
+	 prob dem: -1.37070595508
+	 Predicted correctly? [ True]
+Nixon 12_28_1973.txt
+	 prob dem: -1.36547093
+	 Predicted correctly? [False]
+kennedy_address_to_greater_houston.txt
+	 prob dem: -1.34601816395
+	 Predicted correctly? [ True]
+Ford_8_20_1976_waste.txt
+	 prob dem: -1.33849287715
+	 Predicted correctly? [ True]
+Clinton 9_13_1993(Israel_PalAgree).txt
+	 prob dem: -1.33418195618
+	 Predicted correctly? [ True]
+bush1_8_20_1992_rnc_acceptance.txt
+	 prob dem: -1.32708741234
+	 Predicted correctly? [False]
+Nixon 08_26_1960 (Speech by VP Nixon, Atlanta, GA).txt
+	 prob dem: -1.2736803298
+	 Predicted correctly? [ True]
+Goldwater_1964(extremisimForLiberty).txt
+	 prob dem: -1.26839329616
+	 Predicted correctly? [ True]
+Nixon 10_28_1971 (Welcome to President Josip Broz Tito of Yugoslavia).txt
+	 prob dem: -1.26484519289
+	 Predicted correctly? [ True]
+Nixon 08_03_1960 (Remarks of VP Nixon, Iolani Palace Steps, Honolulu).txt
+	 prob dem: -1.25037305851
+	 Predicted correctly? [False]
+Clinton_5_5_1993(ResotreHope).txt
+	 prob dem: -1.19918786175
+	 Predicted correctly? [ True]
+CHlinton 12_06_2011 (International Human Rights Day, Palais des Nations).txt
+	 prob dem: -1.1857916975
+	 Predicted correctly? [ True]
+nixon_8_15_1973_second_watergate.txt
+	 prob dem: -1.18563066395
+	 Predicted correctly? [False]
+bush1_9_11_1990_joint_congress.txt
+	 prob dem: -1.18023411801
+	 Predicted correctly? [ True]
+bush1_1_16_1991_invasion_iraq.txt
+	 prob dem: -1.15033977939
+	 Predicted correctly? [False]
+Nixon 06_17_1971 (Drug Abuse Prevention and Control).txt
+	 prob dem: -1.13859869296
+	 Predicted correctly? [ True]
+johnson_we_shall_overcome.txt
+	 prob dem: -1.12591683439
+	 Predicted correctly? [ True]
+LBJohnson 12_05_1963 (Remarks to Employees of the Department of State).txt
+	 prob dem: -1.11522628543
+	 Predicted correctly? [False]
+Ford 4_10_1975(ForiegnPolicy).txt
+	 prob dem: -1.10605681775
+	 Predicted correctly? [ True]
+Goldwater_1984(RNC).txt
+	 prob dem: -1.0518984365
+	 Predicted correctly? [False]
+bush2_sou_2006.txt
+	 prob dem: -1.02377763084
+	 Predicted correctly? [ True]
+LBJohnson 12_13_1963 (Remarks to Members of Consumer Advisory Council).txt
+	 prob dem: -1.00820891491
+	 Predicted correctly? [False]
+Reagan 01_20_1981 (Inaug. Add.).txt
+	 prob dem: -0.982754253542
+	 Predicted correctly? [ True]
+Reagan 03_23_1993 (10th anniversary of Strategic Defense Initiative).txt
+	 prob dem: -0.980024809643
+	 Predicted correctly? [ True]
+Obama 06_11_2013 (immigration reform).txt
+	 prob dem: -0.972633268455
+	 Predicted correctly? [ True]
+LBJohnson 4_11_1965(Educ.Bill).txt
+	 prob dem: -0.972628162296
+	 Predicted correctly? [ True]
+Ford_3_29_1975_selective_service.txt
+	 prob dem: -0.930171437317
+	 Predicted correctly? [ True]
+Ford_10_12_1974_railrod.txt
+	 prob dem: -0.919002697544
+	 Predicted correctly? [False]
+Reagan 03_08_1983 (Evil Empire).txt
+	 prob dem: -0.913198517106
+	 Predicted correctly? [ True]
+Bush2_Radio_Address3.txt
+	 prob dem: -0.910623389667
+	 Predicted correctly? [False]
+clinton_sou_1999.txt
+	 prob dem: -0.901922565668
+	 Predicted correctly? [ True]
+truman_1_15_1953_farewell.txt
+	 prob dem: -0.895784362309
+	 Predicted correctly? [ True]
+Nixon 08_03_1960 (Remarks by VP Nixon, International Airport, Honolulu).txt
+	 prob dem: -0.893216813976
+	 Predicted correctly? [ True]
+truman_4_11_1951_korea.txt
+	 prob dem: -0.890210905715
+	 Predicted correctly? [False]
+Clinton_4_24_1999(Kosovo).txt
+	 prob dem: -0.888262967977
+	 Predicted correctly? [False]
+carter_sou_1978.txt
+	 prob dem: -0.883326630302
+	 Predicted correctly? [ True]
+Obama 08_31_2013 (Deliberate, Syria situation).txt
+	 prob dem: -0.879557527198
+	 Predicted correctly? [ True]
+Nixon 08_21_1960 (The Meaning of Communism to Americans).txt
+	 prob dem: -0.876870673053
+	 Predicted correctly? [ True]
+LBJohnson 3_15_1965(Promise).txt
+	 prob dem: -0.866240874223
+	 Predicted correctly? [ True]
+bush1_8_1_1990_un_address.txt
+	 prob dem: -0.860078935848
+	 Predicted correctly? [ True]
+nixon_checkers.txt
+	 prob dem: -0.853777564931
+	 Predicted correctly? [ True]
+Bush2_Radio_Address.txt
+	 prob dem: -0.850079149302
+	 Predicted correctly? [False]
+Obama 04_08_2013 (Reducing Gun Violence).txt
+	 prob dem: -0.844634908657
+	 Predicted correctly? [ True]
+Clinton_11_3_1996(STPaul).txt
+	 prob dem: -0.814124602676
+	 Predicted correctly? [False]
+JFK 1_20_1961 (Inaug. Add).txt
+	 prob dem: -0.807703053208
+	 Predicted correctly? [False]
+Reagan 05_31_1988 (Moscow State University).txt
+	 prob dem: -0.801387677269
+	 Predicted correctly? [ True]
+Ford_8_5_1975_gen_lee.txt
+	 prob dem: -0.782418375823
+	 Predicted correctly? [False]
+Clinton_4_23_1998(Ghana).txt
+	 prob dem: -0.782005751675
+	 Predicted correctly? [False]
+Carter_9_7_1977(Panama).txt
+	 prob dem: -0.780690701376
+	 Predicted correctly? [ True]
+bush2_sou_2003.txt
+	 prob dem: -0.773857806568
+	 Predicted correctly? [ True]
+Reagan 04_18_1983 (Embassy Bombing in Beirut).txt
+	 prob dem: -0.772531324725
+	 Predicted correctly? [ True]
+Reagan 06_08_1982 (Evil Empire 1).txt
+	 prob dem: -0.771045567021
+	 Predicted correctly? [ True]
+Nixon 08_04_1960 (Speech of VP Nixon, Waikiki Shell, Honolulu).txt
+	 prob dem: -0.759548675933
+	 Predicted correctly? [ True]
+JFK_5_20_1961(AANews).txt
+	 prob dem: -0.756938215959
+	 Predicted correctly? [False]
+Obama 06_19_2013 (Brandenburg Gate).txt
+	 prob dem: -0.749160970533
+	 Predicted correctly? [ True]
+CHlinton 01_21_2010 (Newseum Address on Internet Freedom).txt
+	 prob dem: -0.746304067561
+	 Predicted correctly? [ True]
+Ford_2_3_1975_black_history.txt
+	 prob dem: -0.741316435731
+	 Predicted correctly? [ True]
+Clinton 10_16_1995(Race).txt
+	 prob dem: -0.734156749156
+	 Predicted correctly? [ True]
+Carter_1_4_1980(Afghanistan).txt
+	 prob dem: -0.732728644039
+	 Predicted correctly? [False]
+Obama 03_25_2013 (Immigration and Citizenship).txt
+	 prob dem: -0.727066709953
+	 Predicted correctly? [ True]
+nixon_1_23_1973_peace_with_honor.txt
+	 prob dem: -0.724435345881
+	 Predicted correctly? [False]
+Obama 08_22_2013 (college affordability).txt
+	 prob dem: -0.722050435771
+	 Predicted correctly? [ True]
+macarthur_truth_duty_honor.txt
+	 prob dem: -0.719877953985
+	 Predicted correctly? [False]
+Ford 12_7_1975(Hawaii).txt
+	 prob dem: -0.719122029092
+	 Predicted correctly? [ True]
+Ford_12_17_1974_safe_drinking.txt
+	 prob dem: -0.714964209353
+	 Predicted correctly? [False]
+reagan_sou_1982.txt
+	 prob dem: -0.712346330651
+	 Predicted correctly? [False]
+Bush1_Radio_Governmental_Reform.txt
+	 prob dem: -0.700565192214
+	 Predicted correctly? [False]
+bush2_sou_2004.txt
+	 prob dem: -0.695734481468
+	 Predicted correctly? [False]
+Obama 02_13_2013 (Remarks to Workers in North Carolina).txt
+	 prob dem: -0.691246644615
+	 Predicted correctly? [False]
+Clinton 9_22_1993 (HCR).txt
+	 prob dem: -0.68667948588
+	 Predicted correctly? [ True]
+Reagan 11_11_1988 (V-Day Ceremony Address).txt
+	 prob dem: -0.681332340028
+	 Predicted correctly? [ True]
+CRice 01_23_2008 (Keynote at Annual Meeting of World Economic Forum).txt
+	 prob dem: -0.680249508865
+	 Predicted correctly? [ True]
+Nixon 08_08_1968 (Accepting Presidential Nomination at the RNC in Miami Beach).txt
+	 prob dem: -0.672299804081
+	 Predicted correctly? [ True]
+nixon_silent_majority.txt
+	 prob dem: -0.672059597302
+	 Predicted correctly? [False]
+Ford_2_19_1976_japanese.txt
+	 prob dem: -0.665922691521
+	 Predicted correctly? [ True]
+Obama 06_30_2013 (Cape Town Remarks).txt
+	 prob dem: -0.660213039202
+	 Predicted correctly? [ True]
+reagan_sou_1984.txt
+	 prob dem: -0.657441154724
+	 Predicted correctly? [ True]
+JFK_5_17_1961(Canada).txt
+	 prob dem: -0.649958312439
+	 Predicted correctly? [ True]
+Reagan 03_08_1985 (Creators of the Future).txt
+	 prob dem: -0.647265641271
+	 Predicted correctly? [False]
+clinton_sou_1993.txt
+	 prob dem: -0.640429274602
+	 Predicted correctly? [ True]
+LBJohnson 12_18_1963 (Signing the Vocational Education Bill).txt
+	 prob dem: -0.620198160953
+	 Predicted correctly? [ True]
+bush2_sou_2002.txt
+	 prob dem: -0.617396740735
+	 Predicted correctly? [False]
+Obama 09_10_2013 (Syria).txt
+	 prob dem: -0.609088975771
+	 Predicted correctly? [False]
+LBJohnson 5_22_1964(Michigan).txt
+	 prob dem: -0.608451290345
+	 Predicted correctly? [ True]
+Nixon 11_01_1960 (War Memorial Auditorium, NY).txt
+	 prob dem: -0.599674965314
+	 Predicted correctly? [ True]
+CHlinton 06_07_2008 (Suspension of Presidential Campaign).txt
+	 prob dem: -0.594787774954
+	 Predicted correctly? [False]
+reagan_sou_1988.txt
+	 prob dem: -0.593162560084
+	 Predicted correctly? [False]
+Obama 09_24_2013 (Diplomatic Path, Address to UN General Assembly).txt
+	 prob dem: -0.582813083691
+	 Predicted correctly? [False]
+Carter_3_9_1977(Energy).txt
+	 prob dem: -0.566543092968
+	 Predicted correctly? [False]
+truman_8_27_1945_navy_day.txt
+	 prob dem: -0.566156100399
+	 Predicted correctly? [ True]
+clinton_sou_1995.txt
+	 prob dem: -0.562071759153
+	 Predicted correctly? [False]
+Carter_5_22_1977(Notre_Dame).txt
+	 prob dem: -0.560599769725
+	 Predicted correctly? [ True]
+bush1_8_18_1988_rnc_accaptance.txt
+	 prob dem: -0.557271104347
+	 Predicted correctly? [ True]
+Bush1_Radio_LA_Visit.txt
+	 prob dem: -0.556795898011
+	 Predicted correctly? [ True]
+Obama 08_06_2013 (housing and economy).txt
+	 prob dem: -0.553783132986
+	 Predicted correctly? [ True]
+Ford_1_15_1975_SOU.txt
+	 prob dem: -0.546715048311
+	 Predicted correctly? [ True]
+Clinton 01_20_1993.txt
+	 prob dem: -0.546620305198
+	 Predicted correctly? [False]
+Obama 07_18_2013 (Affordable Care Act Update).txt
+	 prob dem: -0.541419620266
+	 Predicted correctly? [False]
+Reagan 01_28_1986 (Challenger space shuttle crash).txt
+	 prob dem: -0.539677974632
+	 Predicted correctly? [ True]
+Nixon 08_02_1960 (Remarks of VP Nixon, Airport, Reno).txt
+	 prob dem: -0.527437597304
+	 Predicted correctly? [ True]
+Obama 08_15_2013 (Egypt).txt
+	 prob dem: -0.509109363478
+	 Predicted correctly? [False]
+Reagan 1986 (Forward For Freedom).txt
+	 prob dem: -0.488081932216
+	 Predicted correctly? [False]
+LBJohnson 7_30_1965(Medicare).txt
+	 prob dem: -0.486809294018
+	 Predicted correctly? [False]
+bush1_8_8_1990_invasion_kuwait.txt
+	 prob dem: -0.486463279694
+	 Predicted correctly? [False]
+Clinton_1_26_1998(Lewinsky).txt
+	 prob dem: -0.480707105018
+	 Predicted correctly? [ True]
+Goldwater_9_1964(OpenCampaign).txt
+	 prob dem: -0.480645754068
+	 Predicted correctly? [ True]
+JFK_5_25_1961(moon).txt
+	 prob dem: -0.479578132452
+	 Predicted correctly? [False]
+jfkennedy_ich_bin_ein.txt
+	 prob dem: -0.474653279874
+	 Predicted correctly? [False]
+Obama 09_22_2013 (Memorial Victims Navy Yard Shooting).txt
+	 prob dem: -0.469337002344
+	 Predicted correctly? [False]
+bush2_sou_2008.txt
+	 prob dem: -0.463901053439
+	 Predicted correctly? [ True]
+JFK_3_1_1961(Peace_Corps).txt
+	 prob dem: -0.459757385038
+	 Predicted correctly? [False]
+Bush2_Elementary_School.txt
+	 prob dem: -0.453118864555
+	 Predicted correctly? [ True]
+CHlinton 08_26_2008 (DNC Keynote Address).txt
+	 prob dem: -0.451003539422
+	 Predicted correctly? [ True]
+LBJohnson 12_16_1963 (Signing the Higher Education Facilities Act).txt
+	 prob dem: -0.448732883918
+	 Predicted correctly? [False]
+Ford_5_16_1975_ntl_heritage.txt
+	 prob dem: -0.445528976352
+	 Predicted correctly? [False]
+Reagan 06_12_1987 (Tear Down This Wall).txt
+	 prob dem: -0.441397843106
+	 Predicted correctly? [ True]
+roosevelt_pearl_harbor.txt
+	 prob dem: -0.438436388593
+	 Predicted correctly? [False]
+CRice 04_08_2004 (Opening Statement to the 9:11 Commission).txt
+	 prob dem: -0.428528807373
+	 Predicted correctly? [ True]
+JFK_10_22_1962(Arms_Cuba).txt
+	 prob dem: -0.42417449203
+	 Predicted correctly? [ True]
+truman_3_29_1952_jefferson_jackson_day.txt
+	 prob dem: -0.421252693906
+	 Predicted correctly? [ True]
+Reagan 01_11_1989 (Farewell Address).txt
+	 prob dem: -0.416246643753
+	 Predicted correctly? [ True]
+obama_state_of_the_union_2013.txt
+	 prob dem: -0.414614191172
+	 Predicted correctly? [ True]
+Obama 04_25_2013 (Dedication of Bush Library).txt
+	 prob dem: -0.411534258929
+	 Predicted correctly? [ True]
+Clinton_11_27_1995(Bosnia).txt
+	 prob dem: -0.410813163411
+	 Predicted correctly? [ True]
+Obama 02_15_2013 (Families, Communities, and the Middle Class).txt
+	 prob dem: -0.410294568248
+	 Predicted correctly? [ True]
+LBJohnson 03_31_1968 (No Reelection).txt
+	 prob dem: -0.40810254544
+	 Predicted correctly? [ True]
+Ford_7_5_1976_naturalization.txt
+	 prob dem: -0.407545685307
+	 Predicted correctly? [False]
+Obama 07_01_2013 (Tanzania Business Leaders).txt
+	 prob dem: -0.405704771942
+	 Predicted correctly? [False]
+Obama 05_23_2013 (Drones, War, Defense).txt
+	 prob dem: -0.396669926814
+	 Predicted correctly? [ True]
+bush2_sou_2007.txt
+	 prob dem: -0.389549406546
+	 Predicted correctly? [False]
+Reagan 03_02_1984 (Our Noble Vision, An Opportunity For All).txt
+	 prob dem: -0.38834814899
+	 Predicted correctly? [ True]
+LBJohnson 11_25_1963 (Remarks to State Governors after Kennedy Funeral).txt
+	 prob dem: -0.383309827454
+	 Predicted correctly? [ True]
+CHlinton 09_27_1996 (It Takes A Village).txt
+	 prob dem: -0.378731937462
+	 Predicted correctly? [ True]
+eisenhower_12_8_1953_atoms_for_peace.txt
+	 prob dem: -0.376238030782
+	 Predicted correctly? [False]
+Nixon 01_30_1974 (State of the Union).txt
+	 prob dem: -0.375357810615
+	 Predicted correctly? [ True]
+CHlinton 12_14_2009 (Human Rights Agenda, 21st Century).txt
+	 prob dem: -0.373994703431
+	 Predicted correctly? [False]
+Obama 01_20_2009 (Inaug. Address 1).txt
+	 prob dem: -0.368576418852
+	 Predicted correctly? [False]
+Ford_8_19_1975_american_legion.txt
+	 prob dem: -0.367397169308
+	 Predicted correctly? [ True]
+eisenhower_1_5_1957_doctrine.txt
+	 prob dem: -0.365874117087
+	 Predicted correctly? [False]
+truman_8_22_1952_rear_platform.txt
+	 prob dem: -0.364913735278
+	 Predicted correctly? [ True]
+LBJohnson 1_27_1967(Space).txt
+	 prob dem: -0.361494135161
+	 Predicted correctly? [False]
+Clinton 6_25_1996(VictimRights).txt
+	 prob dem: -0.3601357304
+	 Predicted correctly? [False]
+Carter_4_9_1977(PressConference).txt
+	 prob dem: -0.35966315222
+	 Predicted correctly? [ True]
+bush1_sou_1992.txt
+	 prob dem: -0.35191233658
+	 Predicted correctly? [ True]
+Obama 04_18_2013 (Interfaith Memorial Service, Boston Marathon).txt
+	 prob dem: -0.33713126943
+	 Predicted correctly? [ True]
+Ford 10_8_1974 (WIN).txt
+	 prob dem: -0.327519946251
+	 Predicted correctly? [ True]
+Bush1_Radio_Welfare_Reform.txt
+	 prob dem: -0.322299509691
+	 Predicted correctly? [ True]
+Clinton 6_6_1994(Cemetery).txt
+	 prob dem: -0.320750627924
+	 Predicted correctly? [ True]
+Ford_1_12_1977_sou.txt
+	 prob dem: -0.319760283124
+	 Predicted correctly? [ True]
+Obama 08_07_2013 (National Security and War).txt
+	 prob dem: -0.317572883706
+	 Predicted correctly? [ True]
+Reagan 09_05_1983 (Korean Airline Massacre).txt
+	 prob dem: -0.310690387621
+	 Predicted correctly? [False]
+Nixon 08_02_1960 (Remarks of Vice President Nixon, LA International Airport).txt
+	 prob dem: -0.307056159707
+	 Predicted correctly? [ True]
+Clinton_6_10_1999(KosovoAgree).txt
+	 prob dem: -0.301102677077
+	 Predicted correctly? [ True]
+Reagan 06_06_1984 (D-Day Anniversary).txt
+	 prob dem: -0.291650671069
+	 Predicted correctly? [ True]
+nixon_8_8_1974_resignation.txt
+	 prob dem: -0.287204363199
+	 Predicted correctly? [ True]
+Bush1_Job_Training.txt
+	 prob dem: -0.280800305379
+	 Predicted correctly? [ True]
+Obama 05_24_2013 (U.S. Naval Academy).txt
+	 prob dem: -0.276018032397
+	 Predicted correctly? [False]
+Ford_2_14_1976_petersburg.txt
+	 prob dem: -0.275177894879
+	 Predicted correctly? [ True]
+bush2_sou_2001.txt
+	 prob dem: -0.26862825322
+	 Predicted correctly? [ True]
+truman_3_12_1947_doctrine.txt
+	 prob dem: -0.263852690639
+	 Predicted correctly? [ True]
+Obama 08_28_2013 (I Have A Dream Remarks).txt
+	 prob dem: -0.255811282871
+	 Predicted correctly? [False]
+reagan_sou_1981.txt
+	 prob dem: -0.254300360549
+	 Predicted correctly? [ True]
+JFK_12_11_1961(UN_Women).txt
+	 prob dem: -0.246912239552
+	 Predicted correctly? [False]
+bush1_12_4_1992_somalia.txt
+	 prob dem: -0.243310510398
+	 Predicted correctly? [ True]
+Ford_8_19_1976_nomination.txt
+	 prob dem: -0.23536492962
+	 Predicted correctly? [ True]
+reagan_sou_1986.txt
+	 prob dem: -0.220698711122
+	 Predicted correctly? [ True]
+truman_3_15_1952_columbia.txt
+	 prob dem: -0.211738501164
+	 Predicted correctly? [ True]
+Obama 03_21_2013 (Address to Israel).txt
+	 prob dem: -0.210642546584
+	 Predicted correctly? [ True]
+LBJohnson 06_04_1965 (Civil Rights Commencement Address).txt
+	 prob dem: -0.202581499639
+	 Predicted correctly? [False]
+Palin_3_6_2010(TeaParty).txt
+	 prob dem: -0.19066073548
+	 Predicted correctly? [ True]
+Bush2_Radio_Address2.txt
+	 prob dem: -0.188953973776
+	 Predicted correctly? [ True]
+Ford_2_18_1976_foreign_intelligence.txt
+	 prob dem: -0.186526099173
+	 Predicted correctly? [ True]
+bush1_1_5_1993_west_point.txt
+	 prob dem: -0.174232392875
+	 Predicted correctly? [ True]
+nixon_4_30_1970_cambodian_incursion.txt
+	 prob dem: -0.164407194707
+	 Predicted correctly? [False]
+Clinton_11_7_1993(Somalia).txt
+	 prob dem: -0.161532984354
+	 Predicted correctly? [ True]
+Obama 04_27_2013 (White House Correspondents' Dinner).txt
+	 prob dem: -0.156190075308
+	 Predicted correctly? [ True]
+Ford 9_8_1974(Pardon).txt
+	 prob dem: -0.146030074308
+	 Predicted correctly? [ True]
+Ford_8_1_1975_helsinki.txt
+	 prob dem: -0.144317228194
+	 Predicted correctly? [ True]
+Bush2_AIDS_Research.txt
+	 prob dem: -0.14066465644
+	 Predicted correctly? [ True]
+truman_11_3_1948_victory.txt
+	 prob dem: -0.130812029509
+	 Predicted correctly? [ True]
+nixon_8_9_1974_final_remarks.txt
+	 prob dem: -0.130686985729
+	 Predicted correctly? [ True]
+Carter_7_15_1979(Crisis_Confidence).txt
+	 prob dem: -0.121870907784
+	 Predicted correctly? [ True]
+Obama 07_25_2013 (Economy from Jacksonville).txt
+	 prob dem: -0.119994408308
+	 Predicted correctly? [ True]
+Ford_oath_1974.txt
+	 prob dem: -0.117745370984
+	 Predicted correctly? [ True]
+Carter_8_14_1980(AcceptDNC).txt
+	 prob dem: -0.117456023849
+	 Predicted correctly? [ True]
+JFK_9_26_1963(Mormon).txt
+	 prob dem: -0.114263480654
+	 Predicted correctly? [False]
+Bush1_Radio_Trade_Reform.txt
+	 prob dem: -0.110250780786
+	 Predicted correctly? [False]
+Bush2 09_11_2001.txt
+	 prob dem: -0.109635418645
+	 Predicted correctly? [ True]
+Nixon 02_26_1969 (Address to German Parliament).txt
+	 prob dem: -0.108347025767
+	 Predicted correctly? [ True]
+bush1_sou_1989.txt
+	 prob dem: -0.101871165988
+	 Predicted correctly? [ True]
+Obama 04_29_2013 (National Academy of Sciences).txt
+	 prob dem: -0.0980483291315
+	 Predicted correctly? [ True]
+bush1_2_27_1991_end_gulf_war.txt
+	 prob dem: -0.0977752822599
+	 Predicted correctly? [ True]
+Nixon 08_17_1960 (The Need for Leadership, address in Greensboro, NC).txt
+	 prob dem: -0.0954742649427
+	 Predicted correctly? [ True]
+reagan_a_time_for_choosing.txt
+	 prob dem: -0.0950073622118
+	 Predicted correctly? [False]
+reagan_sou_1985.txt
+	 prob dem: -0.0941158927644
+	 Predicted correctly? [False]
+nixon_2_18_1947_madien.txt
+	 prob dem: -0.0900510817567
+	 Predicted correctly? [False]
+truman_8_6_1945_a_bomb_hiroshima.txt
+	 prob dem: -0.0898772141624
+	 Predicted correctly? [ True]
+CRice 10_01_2002 (Wriston Lecture at Manhattan Institute).txt
+	 prob dem: -0.0885865684108
+	 Predicted correctly? [False]
+LBJohnson 07_15_1960 (Accepting Democratic Party Nomination for Vice Presidency, LA).txt
+	 prob dem: -0.0884290249459
+	 Predicted correctly? [ True]
+Ford_9_18_1974_gen_assembly.txt
+	 prob dem: -0.0860783669905
+	 Predicted correctly? [ True]
+jesse_jackson_dnc_address.txt
+	 prob dem: -0.0835956629156
+	 Predicted correctly? [ True]
+truman_8_9_1945_potsdam_conference.txt
+	 prob dem: -0.0828692078592
+	 Predicted correctly? [ True]
+Obama 04_25_2013 (Explosion in West).txt
+	 prob dem: -0.0822916811012
+	 Predicted correctly? [ True]
+Carter 01_20_1997 (Inaug Add.).txt
+	 prob dem: -0.0780778654328
+	 Predicted correctly? [ True]
+Clinton_1_29_1993(GaysMilitary).txt
+	 prob dem: -0.0730048547738
+	 Predicted correctly? [ True]
+Obama 02_14_2013 (Early Childhood Education).txt
+	 prob dem: -0.0710457142793
+	 Predicted correctly? [ True]
+Nixon 07_28_1960 (Accepting Presidential Nomination at the RNC in Chicago).txt
+	 prob dem: -0.0697963180578
+	 Predicted correctly? [ True]
+Reagan 02_11_1988 (On the Frontier of Freedom).txt
+	 prob dem: -0.0684356366985
+	 Predicted correctly? [ True]
+Reagan 11_05_1994 (Alzheimer's Disease).txt
+	 prob dem: -0.0642130247265
+	 Predicted correctly? [ True]
+Bush1 01_20_1989 (Inaug Add).txt
+	 prob dem: -0.0629799289703
+	 Predicted correctly? [ True]
+Obama 04_03_2013 (Gun Control, Remarks to Denver Police).txt
+	 prob dem: -0.0590753597816
+	 Predicted correctly? [ True]
+Reagan 10_27_1964 (A Time for Choosing, "The Speech").txt
+	 prob dem: -0.0566870435399
+	 Predicted correctly? [ True]
+Bush2 01_20_2005 (Inaug Add. 2).txt
+	 prob dem: -0.0553855528561
+	 Predicted correctly? [ True]
+clinton_sou_1998.txt
+	 prob dem: -0.0520439012015
+	 Predicted correctly? [ True]
+Carter_1_14_1981(Farewell).txt
+	 prob dem: -0.0479462759771
+	 Predicted correctly? [ True]
+Obama 01_29_2013 (Immigration Reform).txt
+	 prob dem: -0.047221666679
+	 Predicted correctly? [ True]
+Ford_4_23_1975_convocation.txt
+	 prob dem: -0.0456507441676
+	 Predicted correctly? [ True]
+JFK_4_27_1961(Press_Pres).txt
+	 prob dem: -0.0444004516108
+	 Predicted correctly? [ True]
+CRice 08_29_2012 (Address at RNC).txt
+	 prob dem: -0.0434628870257
+	 Predicted correctly? [ True]
+JFK_7_2_1957(Imp).txt
+	 prob dem: -0.0403219577463
+	 Predicted correctly? [ True]
+JFK 9_30_1962(UMiss).txt
+	 prob dem: -0.0381293173112
+	 Predicted correctly? [ True]
+JFK_12_7_1961(MiamiAFL).txt
+	 prob dem: -0.03802275445
+	 Predicted correctly? [ True]
+Clinton_4_25_1998(Rwanda).txt
+	 prob dem: -0.0378452620877
+	 Predicted correctly? [ True]
+truman_7_15_1948_dnc.txt
+	 prob dem: -0.0313587116652
+	 Predicted correctly? [ True]
+Eisenhower 1_20_1957 (Inaug Add).txt
+	 prob dem: -0.0301326495136
+	 Predicted correctly? [ True]
+Obama 07_19_2013 (Trayvon Martin).txt
+	 prob dem: -0.0258719749953
+	 Predicted correctly? [ True]
+bush1_5_12_1989_commencement_texas.txt
+	 prob dem: -0.0241123623272
+	 Predicted correctly? [ True]
+Nixon 08_15_1971 (Address to Nation, New Economic Policy, The Challenge of Peace).txt
+	 prob dem: -0.0227160057442
+	 Predicted correctly? [ True]
+clinton_sou_1996.txt
+	 prob dem: -0.0205967449696
+	 Predicted correctly? [ True]
+truman_9_18_1948_whistlestop_tour_iowa.txt
+	 prob dem: -0.0134285411783
+	 Predicted correctly? [ True]
+Obama 02_04_2013 (Preventing Gun Violence).txt
+	 prob dem: -0.0116866582037
+	 Predicted correctly? [ True]
+LBJohnson 12_02_1963 (Bill of Rights Day).txt
+	 prob dem: -0.0104543593704
+	 Predicted correctly? [ True]
+JFK_7_8_1957(Algeria).txt
+	 prob dem: -0.0103702149223
+	 Predicted correctly? [ True]
+truman_6_20_1947_veto_taft_hartley.txt
+	 prob dem: -0.00806969218028
+	 Predicted correctly? [ True]
+Obama _05_05_2013 (Ohio State Commencement Address).txt
+	 prob dem: -0.00804527218662
+	 Predicted correctly? [ True]
+bush2_sou_2005.txt
+	 prob dem: -0.00655303682847
+	 Predicted correctly? [ True]
+reagan_sou_1987.txt
+	 prob dem: -0.00582286108528
+	 Predicted correctly? [ True]
+Ford_9_22_1976_dna.txt
+	 prob dem: -0.00324592733463
+	 Predicted correctly? [ True]
+bush1_3_6_1991_joint_congress_gulf_war.txt
+	 prob dem: -0.00146241383774
+	 Predicted correctly? [False]
+Bush2 01_20_2001 (Inaug Add. 1).txt
+	 prob dem: -0.00137779119948
+	 Predicted correctly? [ True]
+Obama 05_09_2013 (Manufacturing and Economic Progress).txt
+	 prob dem: -0.00111853095069
+	 Predicted correctly? [ True]
+Ford_2_19_1976_japanese_proc.txt
+	 prob dem: -0.000745220533171
+	 Predicted correctly? [ True]
+truman_3_16_1945_first_speech_congress.txt
+	 prob dem: -0.000430821569056
+	 Predicted correctly? [ True]
+Carter_9_17_1978(CampDavid).txt
+	 prob dem: -0.000303070887864
+	 Predicted correctly? [ True]
+LBJohnson 12_23_1963(Joint Session).txt
+	 prob dem: -0.000202709039048
+	 Predicted correctly? [ True]
+truman_5_8_1945_germany_surrenders.txt
+	 prob dem: -5.90386723106e-05
+	 Predicted correctly? [ True]
+CHlinton 12_08_2011 (Ministerial Conference on Internet Freedom).txt
+	 prob dem: -8.09996083037e-08
+	 Predicted correctly? [ True]
+JFK_4_34_1962(UCBerk).txt
+	 prob dem: -3.77364427943e-08
+	 Predicted correctly? [ True]
+nixon_4_30_1973_first_watergate.txt
+	 prob dem: 0.0
+	 Predicted correctly? [ True]
