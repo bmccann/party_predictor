@@ -18,6 +18,8 @@ from sklearn import grid_search
 totalCorrect = 0
 sz = len(labels)
 
+Names = gf.getFileNames()
+
 nonzero = np.nonzero(np.sum(repubAndDemMatrix > 0, axis = 0) == 1)[0]
 repubAndDemMatrix = scipy.delete(repubAndDemMatrix, nonzero, 1)
 
@@ -45,6 +47,10 @@ print clf.best_score_ #<-this is the cv error
 print clf.score(repubAndDemMatrix, labels) #<-training error
 '''
 
+trueDem = 0
+trueRep = 0
+predDem = 0
+predRep = 0
 
 for i in range(len(labels)):
 	clf = LDA()
@@ -63,11 +69,35 @@ for i in range(len(labels)):
 	if clf.predict([repubAndDemMatrix[i].tolist()]) == labels[i]:
 		totalCorrect = totalCorrect + 1
 	# print clf.coef_
-	# print 'predicted =', clf.predict([repubAndDemMatrix[i].tolist()]), '; actual =', labels[i]
-	# print(i)
-	# print(float(totalCorrect) / float(i+1))
+	print(i)
+	predicted = clf.predict([repubAndDemMatrix[i].tolist()])
+	print 'predicted =', predicted, '; actual =', labels[i]
+	
+	if labels[i] == 0:
+		trueDem += 1
+	else:
+		trueRep += 1
+	if predicted == 0:
+		predDem += 1
+	else:
+		predRep +=1
+	
+	if not (predicted == labels[i]):
+		print Names[i]
+	print(float(totalCorrect) / float(i+1))
 
 
 print('LOOCV test error is') #0.748466257669
 print(float(totalCorrect) / float(len(repubAndDemMatrix)))
 
+print
+print('trueDem / predDem =')
+print(float(trueDem) / float(predDem))
+print
+print('trueRep / predRep =')
+print(float(trueRep) / float(predRep))
+print
+print trueDem
+print predDem
+print trueRep
+print predRep

@@ -1,10 +1,18 @@
 import matplotlib
 matplotlib.use('Agg')
-import PCA as PCA
+import vectorizeFiles as VF
+from sklearn.lda import LDA
+import numpy as np
+import getFileNames as gf
+import sys
+import scipy
 import vectorizeFiles as VF
 import getFileNames as gf
 import matplotlib.pyplot as plot
 import numpy as np
+
+
+
 
 
 # from feature_extractor import FeatureExtractor
@@ -14,16 +22,17 @@ import numpy as np
 # featurized = fe.featurizeFiles('../data')
 # classNames, repubAndDemMatrix, labels = featurized[:3]
 [repubAndDemMatrix,vectorizerRepubDem,labels]=VF.extractWordCounts(True,True,False)
-k = 3
 files=gf.getFileNames()
-transformed = PCA.getPCAMat(repubAndDemMatrix, k)
+lda = LDA()
+lda.fit(repubAndDemMatrix, labels)
+transformed = lda.transform(repubAndDemMatrix)
 repub=np.array([list(x) for i,x in enumerate(transformed) if labels[i]==1])
 dem=np.array([list(x) for i,x in enumerate(transformed) if labels[i]==0])
 plot.figure()
-plot.scatter(repub[:,0],repub[:,1],c='r',marker='x')
-plot.scatter(dem[:,0],dem[:,1],c='b',marker='x')
+plot.scatter(repub[:,0],np.random.rand(len(repub[:,0])),c='r',marker='x')
+plot.scatter(dem[:,0],np.random.rand(len(dem[:,0])),c='b',marker='x')
 ##plot.annotate(s=files[0],xy=transformed[0])
-plot.savefig('results/images/VFPCA.png')
+plot.savefig('results/images/VFLDA.png')
 # plot.savefig('results/images/PCA.png')
 
 '''
