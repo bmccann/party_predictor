@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  12 DEC 2013 21:25
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  12 DEC 2013 21:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -698,75 +698,89 @@ File: obama_pca.png Graphic file (type png)
 Package pdftex.def Info: obama_pca.png used on input line 118.
 (pdftex.def)             Requested size: 115.62994pt x 86.72246pt.
 
-<truman_pca.png, id=40, 578.16pt x 433.62pt>
-File: truman_pca.png Graphic file (type png)
- <use truman_pca.png>
-Package pdftex.def Info: truman_pca.png used on input line 120.
+<reagan_pca.png, id=40, 578.16pt x 433.62pt>
+File: reagan_pca.png Graphic file (type png)
+ <use reagan_pca.png>
+Package pdftex.def Info: reagan_pca.png used on input line 119.
 (pdftex.def)             Requested size: 115.62994pt x 86.72246pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--121
+<truman_pca.png, id=41, 578.16pt x 433.62pt>
+File: truman_pca.png Graphic file (type png)
+ <use truman_pca.png>
+Package pdftex.def Info: truman_pca.png used on input line 121.
+(pdftex.def)             Requested size: 115.62994pt x 86.72246pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--122
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--121
+Underfull \hbox (badness 10000) in paragraph at lines 110--122
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--121
+Underfull \hbox (badness 10000) in paragraph at lines 110--122
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--121
+Underfull \hbox (badness 10000) in paragraph at lines 110--122
+[] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--122
 [] []
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3 <./bush1_pca.png> <./bush2_pca.png> <./carter_pca.png> <./clinton_pca.png> <
-./ford_pca.png> <./jfk_pca.png> <./lbj_pca.png> <./nixon_pca.png> <./obama_pca.
-png> <./truman_pca.png>]
+
+Underfull \vbox (badness 3449) has occurred while \output is active []
+
+ [3 <./bush1_pca.png> <./bush2_pca.png> <./carter_pca.png> <./clinton_pca.png> 
+<./ford_pca.png> <./jfk_pca.png> <./lbj_pca.png> <./nixon_pca.png> <./obama_pca
+.png> <./reagan_pca.png> <./truman_pca.png>]
 Missing character: There is no Õ in font cmr10!
 Missing character: There is no Õ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 []$\OML/cmm/m/it/10 <$$\OT1/cmtt/m/n/10 http : / / www . wyzant . com / resourc
 es / lessons /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 []$\OML/cmm/m/it/10 <$$\OT1/cmtt/m/n/10 http : / / www . presidency . ucsb . ed
 u / index . php #
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 []$\OML/cmm/m/it/10 <$$\OT1/cmtt/m/n/10 http : / / www . people-[]press . org /
  2012 / 06 / 04 /
  []
 
 
-Overfull \hbox (32.02243pt too wide) in paragraph at lines 216--217
+Overfull \hbox (32.02243pt too wide) in paragraph at lines 217--218
 \OT1/cmtt/m/n/10 partisan-[]polarization-[]surges-[]in-[]bush-[]obama-[]years/$
 $\OML/cmm/m/it/10 >$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 []$\OML/cmm/m/it/10 <$$\OT1/cmtt/m/n/10 http : / / www . usatoday . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 \OT1/cmtt/m/n/10 story / news / politics / 2013 / 03 / 06 /
  []
 
 
-Overfull \hbox (2.24481pt too wide) in paragraph at lines 221--222
+Overfull \hbox (2.24481pt too wide) in paragraph at lines 222--223
 \OT1/cmtt/m/n/10 partisan-[]politics-[]poll-[]democrats-[]republicans /
  []
 
@@ -776,10 +790,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11972 strings out of 493633
- 220595 string characters out of 3143378
- 274902 words of memory out of 3000000
- 14996 multiletter control sequences out of 15000+200000
+ 11977 strings out of 493633
+ 220684 string characters out of 3143378
+ 275902 words of memory out of 3000000
+ 15000 multiletter control sequences out of 15000+200000
  11878 words of font info for 47 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  56i,8n,55p,1218b,270s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -797,10 +811,10 @@ ive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
 e/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
 /2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/
 2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "CS 229 - Final Paper.pdf" (4 pages, 529230 bytes).
+Output written on "CS 229 - Final Paper.pdf" (4 pages, 560427 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
+ 103 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
