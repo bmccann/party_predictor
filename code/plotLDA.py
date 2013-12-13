@@ -12,9 +12,6 @@ import matplotlib.pyplot as plot
 import numpy as np
 
 
-
-
-
 # from feature_extractor import FeatureExtractor
 
 
@@ -25,14 +22,17 @@ import numpy as np
 files=gf.getFileNames()
 lda = LDA()
 lda.fit(repubAndDemMatrix, labels)
+print lda.score(repubAndDemMatrix, labels) # <- training error
 transformed = lda.transform(repubAndDemMatrix)
 repub=np.array([list(x) for i,x in enumerate(transformed) if labels[i]==1])
 dem=np.array([list(x) for i,x in enumerate(transformed) if labels[i]==0])
 plot.figure()
 plot.scatter(repub[:,0],np.random.rand(len(repub[:,0])),c='r',marker='x')
 plot.scatter(dem[:,0],np.random.rand(len(dem[:,0])),c='b',marker='x')
-##plot.annotate(s=files[0],xy=transformed[0])
-plot.savefig('results/images/VFLDA.png')
+for i in range(len(transformed)):
+	if transformed[i,0] > 5 or transformed[i,0] < -5:
+		plot.annotate(s=files[i],xy=np.array([transformed[i,0],np.random.rand(1)]))
+plot.savefig('results/images/VFLDAannotated.png')
 # plot.savefig('results/images/PCA.png')
 
 '''
