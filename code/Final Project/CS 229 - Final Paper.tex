@@ -85,7 +85,7 @@ Our method performed 5-fold cross-validation on our data, using each of the abov
 
 \subsection{Logistic Regression}
 
-We fit a regularized logistic regression model as well. We tried both L1 and L2 regularization, with varying degrees of strength. We observed the best performance, roughly an 16\%??? LOOCV,  using L1 regularization and with a large penalty coefficient of 100???.  When we decreased the penalty, performance was worse. This was expected, since our dataset consists of only 344 data points, but has around 22135 unique words of features. So without strong regularization, we overfit on our train set and thus saw a worse test error. {\bf [In the future, we plan to use the logistic regression model to look at the speeches that have the highest probability of being Democratic and Republican under the model; this will give us a sense of what speeches are the most Democratic and which are the most Republican.] --- replace this with president rankings...?}
+We fit a regularized logistic regression model as well. We tried both L1 and L2 regularization, with varying degrees of strength. We observed the best performance  at 24.13\% LOOCV,  using L1 regularization and with regularization at the inverse of .5.  When we decreased the penalty, performance decreased. This was expected, since our dataset consists of only 344 data points, but has around 22135 unique words of features. So without strong regularization, we overfit on our train set and thus see a worse test error. When we rank speeches by leaving one out, the most democratic speeches were given by the Clinton's and President Obama. The most republican speeches were more spread across the Republican party and included Nixon, Ford, and Reagan.
 
 \subsection{LDA}
 
@@ -169,11 +169,15 @@ FILL THIS IN.
 
 \subsection{Unsupervised Insights}
 
-FILL THIS IN.
+ Most of the speeches we analyzed are similar to each other. Many speeches by Obama and Clinton (and Nixon to some extent) stand out from the rest, and from each other. There tends to be greater variability among Democrat speeches than there is among Republican speeches
 
 \subsection{Presidential Rankings}
 
-FILL THIS IN.  Head to head rankings vs. pure speech-party classification.
+In order to rank our presidents by political affiliation, we, for each pair of (Democrat, Republican) presidents, held out the training examples for those presidents, and then obtained the probability of each president being Democrat. We used a president’s average probability of being Democrat to sort our rankings.  We also calculated the proportion of times that we correctly identified the Democrat as more of a Democrat than the Republican. We called this the H2H (Head-to-Head) score. 
+
+In order of most to least Democrat: 1. Nixon 2. Bush Sr. 3. Truman 4. Ford 5. Carter 6. Clinton 7. JFK 8. LBJ 9. Reagan 10. Obama 11. Bush
+
+Looking at these rankings, one can clearly see that this ordering is simply not accurate. Our final H2H score was  53.3\%, indicating that we did little better than chance. Combining this with the PCA plots, we suspected that our high accuracies in supervised learning were not a result of  political affiliation. Rather, it resulted from learning enough about an individual’s speech style to associate that back to political party. 
 
 \section{Conclusion}
 
