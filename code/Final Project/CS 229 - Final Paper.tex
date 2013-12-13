@@ -102,7 +102,7 @@ In each of the machine learning algorithms above, we used the entire word count 
 
 \subsection{PCA}
 
-To gain further insight into the data, we used principal component analysis to reduce the dimensionality of our data, which works by finding the set of $k$ mutually orthogonal features which best explain the variation in the overall data (not taking party labels into account).  We made a PCA plot of the data, with the x and y axes representing the first and second components respectively, and colored points based on political party.  We noticed that some speeches, namely 
+To gain further insight into the data, we used principal component analysis to reduce the dimensionality of our data, which works by finding the set of $k$ mutually orthogonal features which best explain the variation in the overall data (not taking party labels into account).  We made a PCA plot of the data, with the $x$ and $y$ axes representing the first and second components respectively, and colored points based on political party.  We noticed that some speeches, namely Cuomo's Democratic National Convention keynote and Carter's 1981 state of the union address, both stood out as clear outliers in our dataset.  
 
 Specifically, we computed $k$ principal components for each $k \in \{ 1, ..., 50 \}$, and then ran logistic regression using the $k$ features from PCA (using L1 regularization with a very minimal penalty).  The leave one out cross validation error was recorded for each $k$.  Remarkably, with $k$ as small as 8 we achieved a LOOCV error of $21\%$, and with $k = 23$ we achieved nearly the same LOOCV error as with the methods above ($16\%$).  One drawback of using PCA is that the interpretation of what the $k$ components represent may be somewhat challenging, however the fact that we can achieve similar performance and accuracy as may other supervised learning methods with far fewer features is exciting.  In the future, we plan to plot the documents along the first two principal components in order to see what underlying structure is present, and which documents help define these 2 axes.  We will also consider utilizing LDA or QDA as additional dimensionality reduction algorithms, which may be better suited for binary classification than PCA (since they search for the linear combinations of features which best explain the variance \emph{between} classes).
 
@@ -116,6 +116,7 @@ Specifically, we computed $k$ principal components for each $k \in \{ 1, ..., 50
 \includegraphics[scale=0.2]{lbj_pca.png}
 \includegraphics[scale=0.2]{nixon_pca.png}
 \includegraphics[scale=0.2]{obama_pca.png}
+\includegraphics[scale=0.2]{reagan_pca.png}
 \hspace{1.1pc}
 \includegraphics[scale=0.2]{truman_pca.png}
 \caption{PCA plots with specific presidents highlighted.  Notice in particular the plots associated with Clinton, Nixon, and Obama, which together seem to contain most of the outliers from the overall plot.}
